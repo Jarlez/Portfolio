@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    width: 50%;
+}
+
+li {
+    display: inline-block;
+}
+
+.nav-central a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+a:hover {
+    color: rgb(35, 35, 35);
+}
+
+.nav-central ul {
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 23px;
+    width: 90%;
+    margin: auto;
+}
+
+.imagens {
+    padding-right: 100px;
+}
+
+.imagens img:hover {
+    filter: contrast(175%) brightness(30%);
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.imagem-esquerda img {
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pagina {}
+
+.perfil img {
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#perfiltxt {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.bloco {
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pagina {
+    display: flex;
+    justify-content: center;
+}
+
+code {
+    font-size: 40px;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.designer {}
