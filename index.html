@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<link>
+<head>
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Portfólio | Jarles Sayhare</title>
-
-<link rel="icon" href="/Portfolio/img/jsicone.png" type="image/x-icon" />
-<link rel="stylesheet" href="/css/pagina.css" />
+            <!-- Nome e imagem da guia -->
+<title>Portfólio | Jarles Sayhare</title>  
+<link rel="icon" href="/Portfolio/img/jsicone.png" type="image/x-icon"/>
+                   <!-- CSS -->
 <link rel="stylesheet" href="css/footer.css" />
 
 </head>
 
 <body>
+                       <!-- NavBar -->
+<nav id="nav">
+   <div class="container">
+       <a class="img-left"><img src="/Portfolio/img/JSlogo.png" height="45"></a>
+          <button id="btn-mobile">&#9776;</button>
+            <div id="menu">    
+                <ul class="navbar-nav">
+                  <li><a href="#" class="nav-link">Início</a>
+                  <li><a href="#" class="nav-link">Projetos</a>
+                  <li><a href="#" class="nav-link">Sobre mim</a>         
+                  <li><a href="#" class="nav-link">Habilidades</a>    
+                  <li><a href="#" class="nav-link">Contato</a>       
+                </ul>
+                  <div class="social">
+                     <a class="gth" href="https://github.com/Jarlez"><img src="/Portfolio/img/github.png" height="34"></a>
+                     <a href="https://www.linkedin.com/in/jarlessayhare7/"><img src="/Portfolio/img/linkedin.png" height="40"></a>
+                  </div>
+            </div>
+   </div>
+</nav>
+                        <!-- NavBar -->                
 
-    <div class="menu">
-        <div class="imagem-esquerda">
-            <a href="index.html"><img src="/Portfolio/img/JSlogo.png" width="130" height="90" alt="logo" /></a>
-        </div>
-        <nav class="nav-central">
-            <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Sobre mim</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="imagens">
-            <a href="index.html"><img src="/Portfolio/img/github.png" width="70" height="50" alt="logo" /></a>
-            <a href="index.html"><img src="/Portfolio/img/linkedin.png" width="70" height="50" alt="logo" /></a>
-        </div>
-    </div>
-
-    <section id="perfiltxt">
+<section id="perfiltxt">
         <div class="pagina">
             <div class="bloco">
-                <code class="designer">
-                designer
-                </code>
+                <button id="designer" >
+                     <div class="dsg">
+                       <code>
+                        designer
+                       </code>
+                     </div>
+                        <div class="paragrafo1">
+                            <p>Criação de posts para redes sociais,
+                            <br>manipulação e melhoria de imagens.
+                            <br>Também trabalho com edição de vídeo.</p>
+                        </div>
+                </button>
                 <div class="perfil">
-                    <img src="/Portfolio/img/Prancheta 2.png" alt="logo" />
+                    <img src="/Portfolio/img/imgperfil.png " alt="logo " />
+                    <p>
+                        Olá, Seja Bem-Vindo ao meu site.<br>Me chamo <strong>Jarles Sayhare.</strong>
+                           <br> Desenvolvedor <strong>Front-End.</strong>
+                    </p> 
                 </div>
-                <code>
+                <button id="desenvolvedor">
+                  <div class="dev">
+                    <code>
                 &lt;desenvolvedor&gt;
-                </code>
+                    </code>
+                 </div>
+                 <div class="paragrafo2">
+                            <p>Desenvolvedor Web Front-End junior.<br>Sempre buscando
+produzir um código<br> limpo e responsivo em meus projetos.</p>
+                   </div>
+                    </button>
             </div>
         </div>
     </section>
 
 
+                                    <!-- Projetos -->   
+
+<section class="pjt">
+
+<div class="projetos">
+<h1> Meus Projetos</h1>
+
+</div>
 
 
 
@@ -59,49 +90,9 @@
 
 
 
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script defer src="menu.js"></script>
 
 </body>
 
