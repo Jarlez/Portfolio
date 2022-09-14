@@ -5,6 +5,7 @@
 
 #nav {
   background: black;
+visibility: hidden;
 }
 .container {
   display: flex;
@@ -12,6 +13,7 @@
 }
 #btn-mobile {
   display: none;
+
 } 
 
 #menu {
