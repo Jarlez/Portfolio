@@ -5,8 +5,9 @@ const nav = document.querySelector('#nav')
 nav.classList.toggle('active')
 }
 
-
 btnMobile.addEventListener('click', toggleMenu);
+
+/* botão de animação "designer e "desenvolvedor"
 
 
 let btn = document.querySelector("#designer");
@@ -27,4 +28,7 @@ btn1.addEventListener("click", () => {
   } else {
     div1.style.display = "none";
   }
-});
+}); 
+
+
+*/
