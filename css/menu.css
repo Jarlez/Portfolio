@@ -1,14 +1,20 @@
+
+.txts {
+margin-top: 1rem;
+font-size: 1.8rem;
+text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .perfil img{
 display:block;
 margin: auto;
 width: 50%;
-
 }
 
 #perfiltxt{
  display: flex;
  justify-content: center;
-
 }
 
 .bloco {
@@ -21,12 +27,7 @@ code {
 font-size: 2.5rem;
 }
 
-.perfil p {
-margin-top: 1rem;
-font-size: 1.8rem;
-text-align: center;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 .paragrafo1 p {
 font-size: 1.25rem;
@@ -130,7 +131,7 @@ padding-bottom: 1rem;
 padding-top: 1rem;
 }
 .perfil img{
-width:15%;
+width:40%;
 }
 
 .perfil p {

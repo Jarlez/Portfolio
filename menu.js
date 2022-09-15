@@ -29,7 +29,21 @@ btn1.addEventListener("click", () => {
     div1.style.display = "none";
   }
 }); 
+const meuNome = document.querySelector('.txts');
+const fName = meuNome.innerHTML;
+meuNome.innerHTML='';
 
+function typeWriter (nome) {
+    setTimeout( () => {
+    const meuNomeF = nome.split('');
+    meuNome.innerHTML='';
+    meuNomeF.forEach( (letra, index) => {
+        setTimeout(function (){
+            meuNome.innerHTML += letra;
+        }, 70 * index)
+    })}, 1500)
+    
+}
 
 */
 
@@ -38,3 +52,4 @@ window.sr = ScrollReveal ({ reset: true });
 sr.reveal('.bloco',{duration :1000});
 
 sr.reveal('#nav',{duration :1000});
+
