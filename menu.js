@@ -7,8 +7,8 @@ nav.classList.toggle('active')
 
 btnMobile.addEventListener('click', toggleMenu);
 
-/* botão de animação "designer e "desenvolvedor"
 
+/* botão de animação "designer e "desenvolvedor"
 
 let btn = document.querySelector("#designer");
 let div = document.querySelector(".paragrafo1");
@@ -29,9 +29,16 @@ btn1.addEventListener("click", () => {
     div1.style.display = "none";
   }
 }); 
+
+
+
 const meuNome = document.querySelector('.txts');
 const fName = meuNome.innerHTML;
 meuNome.innerHTML='';
+
+
+
+
 
 function typeWriter (nome) {
     setTimeout( () => {
