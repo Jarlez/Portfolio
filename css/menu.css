@@ -3,8 +3,11 @@
 margin-top: 1rem;
 font-size: 1.8rem;
 text-align: center;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bold;
 }
+
+
 
 .perfil img{
 display:block;
@@ -27,36 +30,36 @@ code {
 font-size: 2.5rem;
 }
 
-.paragrafo1 p {
-font-size: 1.25rem;
-padding-top: 0.43rem;
-}
-.paragrafo2 p {
-font-size: 1.25rem;
+p {
+font-size: 1.4rem;
+font-family: 'Josefin Sans', sans-serif;
 padding-top: 0.43rem;
 }
 
-#designer {
-background-color: white;
+.dsg  {
 border: none;
 cursor: pointer;
 }
 
-#desenvolvedor {
-background-color: white;
+.dev  {
 border: none;
 cursor: pointer;
+}
+
+.bloco button{
+border: none;
+background-color: white;
 }
 
 .dsg:hover {
-color: grey;
+color: rgb(128, 128, 128);
 transform: scale(1.3);
 transition-duration: 0.5s;
 transition-property: all;
 } 
 
 .dev:hover {
-color: grey;
+color: rgb(128, 128, 128);
 transform: scale(1.3);
 transition-duration: 0.5s;
 transition-property: all;
@@ -115,8 +118,7 @@ font-size: 1rem;
 .bloco{
 display: block;
 width: 100%;   
-left: 0;
-height:0;
+
 text-align: center;
 }
 

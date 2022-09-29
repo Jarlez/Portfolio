@@ -1,167 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Nome e imagem da guia -->
+    <title>Portfólio | Jarles Sayhare</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/jsicone.png" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/projetos.css" />
+  </head>
 
-<head>
+  <body onload="typeWriter(fName);">
+    <!-- NavBar -->
+    <nav id="nav">
+      <div class="container">
+        <a href="index.html" target="_self" class="img-left">
+          <img src="img/JSlogo.png" height="45" />
+        </a>
+        <button id="btn-mobile">&#9776;</button>
+        <div id="menu">
+          <ul class="navbar-nav">
+            <li><a href="#" class="nav-link">Início</a></li>
+            <li><a href="#" class="nav-link">Projetos</a></li>
+            <li><a href="#" class="nav-link">Sobre mim</a></li>
+            <li><a href="#" class="nav-link">Habilidades</a></li>
+            <li><a href="#" class="nav-link">Contato</a></li>
+          </ul>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Nome e imagem da guia -->
-<title>Portfólio | Jarles Sayhare</title>  
-<link rel="icon" href="img/jsicone.png" type="image/x-icon"/>
-<script src="https://unpkg.com/scrollreveal"></script>
-                   <!-- CSS -->
-<link rel="stylesheet" href="css/navbar.css" />
-<link rel="stylesheet" href="css/menu.css" />
-<link rel="stylesheet" href="css/projetos.css"/>
-
-
-
-</head>
-
-<body onload="typeWriter(fName);">
-                       <!-- NavBar -->
-<nav id="nav">
-   <div class="container">
-       <a href="index.html" target="_self" class="img-left"> 
-         <img src="img/JSlogo.png" height="45">
-       </a>
-          <button id="btn-mobile">&#9776;</button>
-            <div id="menu">    
-                <ul class="navbar-nav">
-                  <li><a href="#" class="nav-link">Início</a>
-                  <li><a href="#" class="nav-link">Projetos</a>
-                  <li><a href="#" class="nav-link">Sobre mim</a>         
-                  <li><a href="#" class="nav-link">Habilidades</a>    
-                  <li><a href="#" class="nav-link">Contato</a>       
-                </ul>
-                  <div class="social">
-                     <a class="gth" href="https://github.com/Jarlez"><img src="img/github.png" height="36"></a>
-                     <a href="https://www.linkedin.com/in/jarlessayhare7/"><img src="img/linkedin.png" height="40"></a>
-                  </div>
-            </div>
-   </div>
-</nav>
-
-
-                        <!-- Menu -->    
-<section id="inimn">
-        <div class="pagina">
-            <div class="bloco">
-                <button id="designer" >
-                     <div class="dsg">
-                       <code>
-                        designer
-                       </code>
-                     </div>
-                        <div class="paragrafo1">
-                            <p>Criação de posts para redes sociais,
-                            <br>manipulação e melhoria de imagens.
-                            <br>Também trabalho com edição de vídeo.</p>
-                        </div>
-                </button>
-                <div class="perfil">
-                    <img src="img/imgperfil.png " alt="logo " />
-                    <p class="txts">
-                        Olá, Seja Bem-Vindo ao meu site.<br>Me chamo <strong>Jarles Sayhare.</strong>
-                           <br> Desenvolvedor <strong>Front-End.</strong>
-                    </p> 
-                </div>
-
-                <button id="desenvolvedor">
-                  <div class="dev">
-                    <code>
-                &lt;desenvolvedor&gt;
-                    </code>
-                 </div>
-                 <div class="paragrafo2">
-                            <p>Desenvolvedor Web Front-End junior.<br>Sempre buscando
-                            produzir um código<br> limpo e responsivo em meus projetos.</p>
-                   </div>
-                    </button>
-            </div>
+          <div class="social">
+            <a class="gth" href="https://github.com/Jarlez"
+              ><img src="img/github.png" height="36"
+            /></a>
+            <a href="https://www.linkedin.com/in/jarlessayhare7/"
+              ><img src="img/linkedin.png" height="40"
+            /></a>
+          </div>
         </div>
-</section>
+      </div>
+    </nav>
 
-
-  <section id="pjtmn">
-          <div class="paginapj">
-            <h1 class="projeto"> PROJETOS</h1>
-                <div class="alinharimg">
-                     
-                     <div class="pro">
-
-                       <div class="imgprojeto">
-                           <img src="img/ContadordeNumeros.png" alt="imagem projeto">
-                       </div>
-
-                              <div class="textoimg"> 
-                                 <h2>Contador de Números</h2>
-                              </div>
-
-                                  <div class="botaopj">
-                                      <a href=""><button>Ver mais</button></a>
-                                  </div>
-                     </div> 
-
-                     <div class="pro">
-
-                       <div class="imgprojeto">
-                           <img src="img/CalculadoraBasica.png" alt="imagem projeto">
-                       </div>
-
-                               <div class="textoimg"> 
-                                 <h2>Calculadora Básica</h2>
-                              </div>
-
-                                  <div class="botaopj">
-                                     <a href=""><button>Ver mais</button></a>
-                                  </div>
-                      </div>
-
-                     <div class="pro">
-                       <div class="imgprojeto">
-                           <img src="img/Horadodia.png" alt="imagem projeto">
-                       </div>
-                               <div class="textoimg"> 
-                                 <h2>Hora do dia</h2>
-                              </div>
-                                  <div class="botaopj">
-                                     <a href=""><button>Ver mais</button></a>
-                                  </div>
-                     </div>
-
+    <!-- Menu -->
+    <section id="inimn">
+      <div class="pagina">
+        <div class="bloco">
+          <button id="designer">
+            <div class="dsg">
+              <code> designer </code>
+            </div>
+            <div class="paragrafo1">
+              <p>
+                Criação de posts para redes sociais, <br />manipulação e
+                melhoria de imagens. <br />Também trabalho com edição de vídeo.
+              </p>
+            </div>
+          </button>
+          <div class="perfil">
+            <img src="img/imgperfil.png " alt="logo " />
+            <p class="txts">
+              Olá, Seja Bem-Vindo ao meu site.<br />Me chamo
+              <strong>Jarles Sayhare.</strong> <br />
+              Desenvolvedor <strong>Front-End.</strong>
+            </p>
           </div>
 
-                     <div class="github-link">
-                          <a href="" target="_blank">Repositórios no github</a>
-                    </div>
+          <button id="desenvolvedor">
+            <div class="dev">
+              <code> &lt;desenvolvedor&gt; </code>
+            </div>
+            <div class="paragrafo2">
+              <p>
+                Desenvolvedor Web Front-End junior.<br />Sempre buscando
+                produzir um código<br />
+                limpo e responsivo em meus projetos.
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pjtmn">
+      <div class="paginapj">
+        <h1 class="projeto">PROJETOS</h1>
+        <div class="alinharimg">
+          <div class="pro">
+            <div class="imgprojeto">
+              <img src="img/ContadordeNumeros.png" alt="imagem projeto" />
             </div>
 
+            <div class="textoimg">
+              <h2>Contador de Números</h2>
+            </div>
 
+            <div class="botaopj">
+              <a href=""><button>Ver mais</button></a>
+            </div>
+          </div>
 
+          <div class="pro">
+            <div class="imgprojeto">
+              <img src="img/CalculadoraBasica.png" alt="imagem projeto" />
+            </div>
 
+            <div class="textoimg">
+              <h2>Calculadora Básica</h2>
+            </div>
 
+            <div class="botaopj">
+              <a href=""><button>Ver mais</button></a>
+            </div>
+          </div>
 
-</section>
+          <div class="pro">
+            <div class="imgprojeto">
+              <img src="img/Horário.png" alt="imagem projeto" />
+            </div>
+            <div class="textoimg">
+              <h2>Hora do dia</h2>
+            </div>
+            <div class="botaopj">
+              <a href=""><button>Ver mais</button></a>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="githublink">
+          <a href="" target="_blank">Repositórios no GitHub</a>
+        </div>
+      </div>
+    </section>
 
     <script defer src="menu.js"></script>
-
-
-</body>
-
+  </body>
 </html>
