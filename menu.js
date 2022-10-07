@@ -32,31 +32,32 @@ btn1.addEventListener("click", () => {
 
 
 
-const meuNome = document.querySelector('.txts');
-const fName = meuNome.innerHTML;
-meuNome.innerHTML='';
+const el = document.querySelector(".texto");
+const text = "Olá, Seja Bem-Vindo ao meu site.\n Me chamo Jarles Sayhare, \nDesenvolvedor Front-End.";
+const interval = 300;
 
+function showText(el,text,interval){
 
+const char=text.split("").reverse();
 
+const typer= setInterval(() => {
 
+if(!char.length) {
+return clearInterval(typer);
+}
+const next = char.pop();
 
-function typeWriter (nome) {
-    setTimeout( () => {
-    const meuNomeF = nome.split('');
-    meuNome.innerHTML='';
-    meuNomeF.forEach( (letra, index) => {
-        setTimeout(function (){
-            meuNome.innerHTML += letra;
-        }, 70 * index)
-    })}, 1500)
-    
+el.innerHTML += next;
+
+}, interval);
+
 }
 
-*/
+showText(el,text,interval)
 
+*/
 window.sr = ScrollReveal ({ reset: true });
 
-sr.reveal('.bloco',{duration :1000});
-
+sr.reveal('.pagina',{duration :1000});
 sr.reveal('#nav',{duration :1000});
 

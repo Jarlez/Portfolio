@@ -21,6 +21,7 @@ display: flex;
 justify-content: center;
 padding-top: 3rem;
 gap: 6rem;
+width: 100%;
 }
 
 .pro {
@@ -77,8 +78,14 @@ cursor: pointer;
 }
 
 .githublink{
-width: 30%;
-margin: auto;
+padding-top: 3rem;
+padding-bottom: 3rem;
+display: flex;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 .githublink a {
@@ -86,13 +93,6 @@ font-family: 'Josefin Sans', sans-serif;
 color: rgb(255, 255, 255);
 font-size: 1.5rem;
 text-decoration: none;
-padding-top: 3rem;
-padding-bottom: 3rem;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: center;
-text-align: center;
 }
 
 .githublink a:hover{
@@ -109,8 +109,9 @@ font-size: 2.5rem;
 
 }
 
-
 @media (max-width: 1000px){
+
+
 
 .paginapj h1{
 font-size: 2rem;
@@ -129,7 +130,45 @@ width: 25%;
 
 .pro img{
 width: 90%;
-height: 8rem;
+height: 9rem;
+padding-top: 1rem;
+}
+
+
+
+
+}
+
+@media(max-width: 900px){
+
+.paginapj h1{
+font-size: 1.5rem;
+padding-top: 2.5rem;
+}
+
+}
+
+@media(max-width: 620px){
+
+
+.paginapj h1{
+font-size: 2rem;
+}
+
+.alinharimg {
+padding-top: 2rem;
+display: block;
+}
+
+.pro {
+width: 100%;
+height: 18rem;
+margin-bottom: 2rem;
+}
+
+.pro img{
+width: 90%;
+height: 9rem;
 padding-top: 1rem;
 }
 
