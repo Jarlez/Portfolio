@@ -2,6 +2,7 @@
   background: rgb(0, 0, 0);
   visibility: hidden;
 }
+
 .container {
   display: flex;
   padding: 0.4rem 7%;

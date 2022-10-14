@@ -1,13 +1,13 @@
-#pjtmn{
+#projeto-menu{
 margin-top: 5%;
-background-color: #101010;
+background-color: rgb(16, 16, 16);
 display: flex;
 align-items: center;
 flex-direction: column;
 justify-content: center;
 }
 
-.paginapj h1{
+.pagina-projeto h1{
 font-size: 3rem;
 text-align: center;
 color: rgb(255, 255, 255);
@@ -16,7 +16,7 @@ font-family: 'Josefin Sans', sans-serif;
 letter-spacing: 0.1rem;
 }
 
-.alinharimg {
+.alinhar-imagem {
 display: flex;
 justify-content: center;
 padding-top: 3rem;
@@ -50,7 +50,7 @@ font-family: 'Josefin Sans', sans-serif;
 font-weight: bold;
 }
 
-.botaopj button {
+.botao-projeto button {
 font-family: 'Josefin Sans', sans-serif;
 font-size: 1rem;
 width: 7rem;
@@ -62,7 +62,7 @@ border: none;
 font-weight: bold;
 }
 
-.botaopj{
+.botao-projeto{
 padding-top: 1.5rem;
 padding-bottom: 5rem;
 display: flex;
@@ -71,7 +71,7 @@ flex-direction: column;
 align-items: center;
 }
 
-.botaopj button:hover{
+.botao-projeto button:hover{
 background: transparent;
 border: 0.1rem solid rgb(0, 0, 0);
 cursor: pointer;
@@ -103,7 +103,7 @@ color: rgb(145, 145, 145);
 
 @media (max-width: 1100px){
 
-.paginapj h1 {
+.pagina-projeto h1 {
 font-size: 2.5rem;
 }
 
@@ -113,12 +113,12 @@ font-size: 2.5rem;
 
 
 
-.paginapj h1{
+.pagina-projeto h1{
 font-size: 2rem;
 padding-top: 2.5rem;
 }
 
-.alinharimg {
+.alinhar-imagem {
 padding-top: 2rem;
 gap: 4rem;
 }
@@ -141,7 +141,7 @@ padding-top: 1rem;
 
 @media(max-width: 900px){
 
-.paginapj h1{
+.pagina-projeto h1{
 font-size: 1.5rem;
 padding-top: 2.5rem;
 }
@@ -151,11 +151,11 @@ padding-top: 2.5rem;
 @media(max-width: 620px){
 
 
-.paginapj h1{
+.pagina-projeto h1{
 font-size: 2rem;
 }
 
-.alinharimg {
+.alinhar-imagem {
 padding-top: 2rem;
 display: block;
 }
