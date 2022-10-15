@@ -45,12 +45,9 @@ li {
   margin: 0 0.5rem;
 }
 
-.gth img {
-  margin-bottom: 5px;
-}
+
 
 .social img:hover {
-  filter: contrast(175%) brightness(30%);
   transition-duration: 0.5s;
   transition-property: all;
 }
