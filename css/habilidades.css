@@ -2,7 +2,7 @@
   background-color: rgb(16, 16, 16);
 }
 
-.titulohabilidades h2 {
+.text-skills h2 {
   font-size: 3rem;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -11,20 +11,27 @@
   letter-spacing: 0.1rem;
 }
 
+.text-skills p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: rgb(255, 255, 255);
+}
+
 .container-skills {
-padding-top: 3rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 3.5rem;
 }
 
-.skillbox img{
-width: 100px;
+.skillbox img {
+  width: 100px;
 }
 
 .skillbox {
- width: 130px;
+  width: 130px;
   height: 130px;
   background-color: rgb(196, 196, 196);
   border-radius: 20px;
@@ -32,22 +39,29 @@ width: 100px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
   transition: ease 0.3s;
+  transform-style: preserve-3d;
 }
 
-.skillbox:hover {
-  background-color: rgb(255, 255, 255);
-  transform: scale(1.05);
+.face {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
+.front {
+  transform: rotateY(180deg);
+}
 
+.back {
+  background-color: rgb(196, 196, 196);
+  backface-visibility: hidden;
+}
 
-
-
-
-
-
-
-
+.flip {
+  transform: rotateY(180deg);
+}
