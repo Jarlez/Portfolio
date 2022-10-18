@@ -6,7 +6,7 @@
   font-size: 3rem;
   text-align: center;
   color: rgb(255, 255, 255);
-  padding-top: 4rem;
+  padding-top: 60px;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.1rem;
 }
@@ -14,13 +14,14 @@
 .text-skills p {
   font-size: 1.5rem;
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 40px;
+  padding-bottom: 50px;
   color: rgb(255, 255, 255);
 }
 
 .container-skills {
-  display: flex;
+  display: grid;
+grid-template-columns:  130px 130px 130px 130px 130px ;  
   justify-content: center;
   flex-wrap: wrap;
   gap: 3.5rem;
@@ -64,4 +65,35 @@
 
 .flip {
   transform: rotateY(180deg);
+}
+
+@media(max-width:900px){
+
+.container-skills{
+gap: 2rem;
+}
+
+}
+
+@media(max-width:835px){
+
+.container-skills{
+gap: 1.5rem;
+}
+
+}
+
+@media(max-width:777px){
+
+.container-skills{
+gap: 2rem;
+  display: grid;
+grid-template-columns:  150px 150px 150px ;  
+
+}
+
+.container-skills:nth-child(7){
+
+width: 1px;
+}
 }
