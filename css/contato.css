@@ -1,0 +1,52 @@
+#contato h1 {
+padding-top: 60px;
+text-align: center;
+}
+
+#contato{
+background: rgb(0, 0, 0);
+}
+
+.text-contact h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+
+.text-contact p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.img-info img{
+width: 80px;
+}
+
+.informações h2{
+font-size: 1.2rem;
+font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.informações{
+padding-top: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.align{
+align-items: center;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+gap:10rem;
+}
+
+
