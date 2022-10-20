@@ -1,52 +1,55 @@
-#contato h1 {
-padding-top: 60px;
-text-align: center;
+#contato {
+  background-color: rgb(16, 16, 16);;
 }
 
-#contato{
-background: rgb(0, 0, 0);
-}
-
-.text-contact h1 {
-  font-size: 3rem;
+.align {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
   text-align: center;
-  color: rgb(255, 255, 255);
-  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+margin-top: 70px;
+}
+
+.img-info img {
+  width: 15%;
+}
+
+.acc h2 {
+letter-spacing: 1px;
+  padding-top: 30px;
+  font-size: 0.9rem;
   font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 0.1rem;
+  color: rgb(0, 255, 255);
+}
+
+.acc p {
+ font-family: "Josefin Sans", sans-serif;
+padding-top: 15px;
+  color: rgb(110, 110, 110);
+}
+
+@media (max-width: 900px) {
+ .align{
+ grid-template-columns: 220px 220px 220px;
+}
+
+.acc h2{
+font-size: 0.7rem;
+}
+
+.acc p{
+font-size: 0.9rem;
+}
+}
+
+@media (max-width: 810px) {
+ .align{
+ grid-template-columns: 220px;
 }
 
 
-.text-contact p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  color: rgb(255, 255, 255);
 }
-
-.img-info img{
-width: 80px;
-}
-
-.informações h2{
-font-size: 1.2rem;
-font-family: "Josefin Sans", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.informações{
-padding-top: 100px;
-  color: rgb(255, 255, 255);
-}
-
-.align{
-align-items: center;
-display: flex;
-text-align: center;
-align-items: center;
-justify-content: center;
-gap:10rem;
-}
-
-

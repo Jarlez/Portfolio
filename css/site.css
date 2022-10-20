@@ -1,0 +1,28 @@
+* {
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+}
+
+.tittles h1{
+
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(0, 255, 255);
+  padding-top: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+
+
+.tittles p{
+
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(255, 255, 255);
+font-family: 'Josefin Sans', sans-serif;
+
+}

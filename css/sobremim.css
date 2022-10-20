@@ -1,16 +1,18 @@
+#sobre-mim {
+  padding-top: 120px;
+}
+
 .conteudo {
-  padding-top: 130px;
   display: flex;
   justify-content: center;
 }
 
-.bloco1 img {
-width: 90%;
-margin-left: 30px;
-  box-shadow: -17px 17px rgb(16, 16, 16), 17px -17px rgb(132, 132, 132);
+.bloco-img img {
+  width: 90%;
+  box-shadow: -12px 12px rgb(16, 16, 16), 12px -12px rgb(145, 145, 145);
 }
 
-.titulo h2 {
+.titulo h1 {
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -19,10 +21,11 @@ margin-left: 30px;
 .paragrafo p {
   font-size: 1.5rem;
   text-indent: 2em;
-  padding-top: 30px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .paragrafo {
+  padding-top: 30px;
   margin-left: 50px;
   max-width: 630px;
 }
@@ -41,12 +44,9 @@ margin-left: 30px;
 }
 
 .botao-sobremim {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 .botao-sobremim button:hover {
@@ -55,4 +55,36 @@ margin-left: 30px;
   cursor: pointer;
 }
 
+@media (max-width: 1250px) {
+  .paragrafo {
+  }
+}
 
+@media (max-width: 810px) {
+  .conteudo {
+    display: block;
+  }
+
+  .paragrafo {
+    text-align: center;
+    margin: auto;
+  }
+
+  .titulo {
+    margin-top: 50px;
+  }
+
+  .bloco-img img {
+    width: 60%;
+  }
+
+  .bloco-img {
+    text-align: center;
+  }
+
+  .card-projeto {
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+  }
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="">
 
   <!-- Nome e imagem da guia -->
   <title>Portfólio | Jarles Sayhare</title>
@@ -14,12 +15,13 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/inicio.css" />
   <link rel="stylesheet" href="css/projetos.css" />
-  <link rel="stylesheet" href="css/pag.css" />
+  <link rel="stylesheet" href="css/site.css" />
   <link rel="stylesheet" href="css/sobremim.css">
   <link rel="stylesheet" href="css/habilidades.css">
   <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
@@ -34,11 +36,11 @@
       <button id="btn-mobile">&#9776;</button>
       <div id="menu">
         <ul class="navbar-nav">
-          <li><a href="#" class="nav-link">Início</a></li>
-          <li><a href="#" class="nav-link">Projetos</a></li>
-          <li><a href="#" class="nav-link">Sobre mim</a></li>
-          <li><a href="#" class="nav-link">Habilidades</a></li>
-          <li><a href="#" class="nav-link">Contato</a></li>
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
 
         <div class="social">
@@ -51,8 +53,8 @@
     </div>
   </nav>
 
-  <!-- Menu -->
-  <section id="inicio-menu">
+  <!-- Menu 
+  <section id="inicio">
     <div class="pagina">
       <div class="info-menu">
         <div class="designer">
@@ -93,56 +95,54 @@
 
       </div>
   </section>
-
-
+-->
 
   <!-- Projetos -->
-  <section id="projeto-menu">
+  <section id="projetos">
     <div class="pagina-projeto">
-      <h1 class="projeto">PROJETOS</h1>
-      <div class="alinhar-imagem">
+      <div class="tittles">
+        <h1>Projetos</h1>
+        <p>Alguns dos meus projetos já finalizados</p>
+      </div>
 
-        <div class="pro">
+      <div class="alinhar-card">
+
+        <div class="card-projeto">
           <div class="imgprojeto">
             <img src="img/ContadordeNumeros.png" alt="imagem projeto" />
           </div>
-
           <div class="textoimg">
             <h2>Contador de Números</h2>
           </div>
-
           <div class="botao-projeto">
             <a href=""><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="pro">
+        <div class="card-projeto">
           <div class="imgprojeto">
             <img src="img/CalculadoraBasica.png" alt="imagem projeto" />
           </div>
-
           <div class="textoimg">
             <h2>Calculadora Básica</h2>
           </div>
-
           <div class="botao-projeto">
             <a href=""><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="pro">
+        <div class="card-projeto">
           <div class="imgprojeto">
             <img src="img/Horário.png" alt="imagem projeto" />
           </div>
-
           <div class="textoimg">
             <h2>Hora do dia</h2>
           </div>
-
           <div class="botao-projeto">
             <a href=""><button>Ver mais</button></a>
           </div>
         </div>
+
       </div>
 
       <div class="githublink">
@@ -153,17 +153,16 @@
 
 
   <!-- Sobre Mim-->
-  <section>
+  <section id="sobre-mim">
     <div class="conteudo">
 
-
-      <div class="bloco1">
+      <div class="bloco-img">
         <img src="img/fotoj.png" alt="imagem sobre mim">
       </div>
 
-      <div class="bloco2">
+      <div class="bloco-tittle">
         <div class="titulo">
-          <h2>Sobre mim</h2>
+          <h1>Sobre mim</h1>
         </div>
 
         <div class="paragrafo">
@@ -190,15 +189,16 @@
   </section>
 
 
+
+
+  <!-- Habilidades -->
+
   <section id="habilidades">
 
-    <div class="centralizador">
-
-      <div class="text-skills">
-        <h2>Habilidades</h2>
+      <div class="tittles">
+        <h1>Habilidades</h1>
       </div>
-
-      <div class="text-skills">
+      <div class="tittles">
         <p>Clique nos cards abaixo para mais informações</p>
       </div>
 
@@ -210,7 +210,13 @@
               onmouseout="this.src='img/svg/html1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>HTML5</li>
+              <li>HTML SEO</li>
+              <li>Acessibilidade</li>
+              <li>Boas práticas</li>
+              <li>Código limpo</li>
+            </ol>
           </div>
         </div>
 
@@ -220,7 +226,13 @@
               onmouseout="this.src='img/svg/css31.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>CSS3</li>
+              <li>Design Moderno</li>
+              <li>Responsividade</li>
+              <li>CSS GRID</li>
+              <li>Animações</li>
+            </ol>
           </div>
         </div>
 
@@ -230,7 +242,12 @@
               onmouseout="this.src='img/svg/js1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>JavaScript</li>
+              <li> Manipulação do DOM</li>
+              <li>Sintaxe</li>
+              <li>Animações</li>
+            </ol>
           </div>
         </div>
 
@@ -240,7 +257,13 @@
               onmouseout="this.src='img/svg/reactjs1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>React.JS</li>
+              <li>Estudando...</li>
+              <li>Estudando...</li>
+              <li>Estudando...</li>
+              <li>Estudando...</li>
+            </ol>
           </div>
         </div>
 
@@ -250,7 +273,13 @@
               onmouseout="this.src='img/svg/filmora1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>Filmora 10</li>
+              <li>Edição de Video</li>
+              <li>Transições</li>
+              <li>Speed Ramping</li>
+              <li>Timing</li>
+            </ol>
           </div>
         </div>
 
@@ -260,7 +289,13 @@
               onmouseout="this.src='img/svg/git1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>Git</li>
+              <li>Workflow</li>
+              <li>Commits</li>
+              <li>Versionamento</li>
+              <li>Git-flow</li>
+            </ol>
           </div>
         </div>
 
@@ -270,7 +305,12 @@
               onmouseout="this.src='img/svg/github1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>GitHub</li>
+              <li>Github pages</li>
+              <li>Repositório remoto</li>
+              <li>Fork</li>
+            </ol>
           </div>
         </div>
 
@@ -280,7 +320,13 @@
               onmouseout="this.src='img/svg/hardware1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>Hardware</li>
+              <li>Software</li>
+              <li>Consultoria</li>
+              <li>Suporte técnico</li>
+              <li>Suporte remoto</li>
+            </ol>
           </div>
         </div>
 
@@ -290,7 +336,13 @@
               onmouseout="this.src='img/svg/pc1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>Desenvolvedor</li>
+              <li>Front-end Junior</li>
+              <li>Versatilidade</li>
+              <li>Comunicação</li>
+              <li>Determinação</li>
+            </ol>
           </div>
         </div>
 
@@ -300,72 +352,67 @@
               onmouseout="this.src='img/svg/photoshop1.svg'" />
           </div>
           <div class="face back">
-            <p>texto</p>
+            <ol class="list">
+              <li>PhotoShop</li>
+              <li>Social media</li>
+              <li>Designer gráfico</li>
+              <li>Melhoria de imagens</li>
+            </ol>
           </div>
         </div>
 
-      </div>
+     
 
   </section>
 
+
+  <!-- Contato -->
+
   <section id="contato">
 
-    <div class="text-contact">
+    <div class="tittles">
       <h1>Contato</h1>
     </div>
-
-    <div class="text-contact">
-      <p>Clique nos cards abaixo para mais informações</p>
+    <div class="tittles">
+      <p>Entre em contato comigo e tire suas dúvidas, estou sempre a disposição.</p>
     </div>
 
     <div class="align">
 
-      <div class="informações">
-
+      <div class="info">
         <div class="img-info">
           <img class="icones-habilidades" src="img/svg/discord.svg">
         </div>
-
-        <div>
+        <div class="acc">
           <h2>DISCORD</h2>
         </div>
-
-        <div>
+        <div class="acc">
           <p>jarles#8431</p>
         </div>
-
       </div>
 
-      <div class="informações">
-
+      <div class="info">
         <div class="img-info">
           <img class="icones-habilidades" src="img/svg/telefone.svg">
         </div>
-
-        <div>
-          <h2>TELEFONE E WHATSAPP</h2>
+        <div class="acc">
+          <h2>WHATSAPP E LIGAÇÃO</h2>
         </div>
-
-        <div>
+        <div class="acc">
           <p>(88) 99732-8109</p>
         </div>
-
       </div>
 
-      <div class="informações">
-
+      <div class="info">
         <div class="img-info">
           <img class="icones-habilidades" src="img/svg/email.svg">
         </div>
-
-        <div>
-          <h2>ENVIE UM E-MAIL</h2>
+        <div class="acc">
+          <h2>E-MAIL</h2>
         </div>
-
-        <div>
+        <div class="acc">
           <p>jarlesssayhare@gmail.com</p>
         </div>
-
       </div>
 
     </div>
@@ -373,10 +420,9 @@
   </section>
 
 
-
-
-
   <script defer src="menu.js"></script>
+
+
 </body>
 
 </html>

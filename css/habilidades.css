@@ -2,30 +2,12 @@
   background-color: rgb(16, 16, 16);
 }
 
-.text-skills h2 {
-  font-size: 3rem;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding-top: 60px;
-  font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 0.1rem;
-}
-
-.text-skills p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  color: rgb(255, 255, 255);
-}
-
 .container-skills {
+  padding-top: 70px;
   display: grid;
-grid-template-columns:  130px 130px 130px 130px 130px ;  
+  grid-template-columns: 130px 130px 130px 130px 130px;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 3.5rem;
-padding-bottom: 60px;
 }
 
 .skillbox img {
@@ -35,7 +17,7 @@ padding-bottom: 60px;
 .skillbox {
   width: 130px;
   height: 130px;
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -45,14 +27,16 @@ padding-bottom: 60px;
   transform-style: preserve-3d;
 }
 
+.flip {
+  transform: rotateY(180deg);
+}
+
 .face {
   width: 100px;
   height: 100px;
   display: flex;
   color: rgb(255, 255, 255);
   position: absolute;
-  justify-content: center;
-  align-items: center;
 }
 
 .front {
@@ -60,57 +44,54 @@ padding-bottom: 60px;
 }
 
 .back {
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(255, 255, 255);
   backface-visibility: hidden;
 }
 
-.flip {
-  transform: rotateY(180deg);
+.back p {
+  font-size: 0.7rem;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
 }
 
-@media(max-width:900px){
-
-.container-skills{
-gap: 2rem;
+.list {
+  margin: auto;
 }
 
+.list li {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding-top: 7px;
+  list-style-type: none;
+  font-weight: bold;
 }
 
-@media(max-width:850px){
 
-.container-skills{
-gap: 1.5rem;
+
+@media (max-width: 950px) {
+  .container-skills {
+    gap: 1.5rem;
+  }
 }
 
+@media (max-width: 850px) {
+  .container-skills {
+    gap: 1rem;
+  }
 }
 
-@media(max-width:770px){
-
-.container-skills{
-gap: 2rem;
-  display: grid;
-grid-template-columns:  130px 130px 130px ;  
-
+@media (max-width: 810px) {
+  .container-skills {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 130px 130px;
+  }
 }
 
-.container-skills:nth-child(7){
-
-width: 1px;
-}
-}
-
-@media(max-width:550px){
-
-.container-skills{
-grid-template-columns: 130px 130px   ;  
-}
-
-}
-
-@media(max-width:400px){
-
-.container-skills{
-grid-template-columns:  130px  ;  
-}
-
+@media (max-width: 400px) {
+  .container-skills {
+    grid-template-columns: 130px;
+  }
 }

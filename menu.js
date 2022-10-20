@@ -63,6 +63,7 @@ sr.reveal('.pagina',{duration :1000});
 sr.reveal('#nav',{duration :1000});
 
 
+
 const skillbox = document.querySelectorAll(".skillbox");
 skillbox.forEach(element => element.addEventListener("click", function () {
   this.classList.toggle("flip")
