@@ -1,0 +1,56 @@
+.rodape {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+.bottom{
+ padding-top: 10px;
+text-align: center;
+  padding-bottom: 10px;
+}
+
+.bottom p{
+ 
+  color: rgb(255, 255, 255);
+  
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 220px 10px 220px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.image {
+  padding-top: 15px;
+  margin-left: 110px;
+}
+
+#linha-vertical {
+  height: 100px;
+  border-right: 1px solid rgb(145, 145, 145);
+}
+
+.top h2 {
+  padding-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(0, 255, 255);
+}
+
+.footer-icon img {
+  width: 20px;
+}
+
+.footer-icon {
+  padding-top: 7px;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 35px 35px 35px 35px;
+}

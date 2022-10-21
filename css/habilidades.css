@@ -2,12 +2,15 @@
   background-color: rgb(16, 16, 16);
 }
 
+
+
 .container-skills {
   padding-top: 70px;
   display: grid;
   grid-template-columns: 130px 130px 130px 130px 130px;
   justify-content: center;
   gap: 3.5rem;
+padding-bottom: 70px;
 }
 
 .skillbox img {
