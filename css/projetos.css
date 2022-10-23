@@ -143,6 +143,12 @@
     margin: auto;
     flex-wrap: wrap;
   }
+
+  .card-projeto {
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 600px) {
