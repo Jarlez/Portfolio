@@ -4,16 +4,13 @@
 
 .section-skills {
   display: grid;
-  grid-template-columns: 100px 10px 100px 10px 100px 10px 100px 10px 100px 10px 100px;
+  grid-template-columns: 104px 8px 104px 8px 104px 8px 104px 8px 104px 8px 104px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-}
-
-.info-card {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  gap: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .img-card img {
@@ -23,7 +20,7 @@
 
 .valores p {
   letter-spacing: 1px;
-  padding-top: 10px;
+  padding-top: 8px;
   font-size: 0.8rem;
   font-family: "Josefin Sans", sans-serif;
   color: rgb(0, 255, 255);
@@ -32,7 +29,7 @@
 .valores h2 {
   font-size: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
-  padding-top: 10px;
+  padding-top: 8px;
   color: rgb(255, 255, 255);
 }
 
@@ -44,23 +41,36 @@
 
 @media (max-width: 1000px) {
   .section-skills {
-    display: grid;
-    grid-template-columns: 100px 10px 100px 10px 100px 10px;
+    grid-template-columns: 104px 8px 104px 8px 104px 8px;
   }
 
+  .linha:nth-child(6) {
+    border-right: 1px transparent;
+  }
 }
 
 @media (max-width: 600px) {
   .section-skills {
     display: grid;
-    grid-template-columns: 100px 10px 100px 10px;
+    grid-template-columns: 104px 8px 104px 8px;
+  }
+  .linha:nth-child(6) {
+    border-right: 1px solid rgb(145, 145, 145);
+  }
+
+  .linha:nth-child(4) {
+    border-right: 1px transparent;
+  }
+
+  .linha:nth-child(8) {
+    border-right: 1px transparent;
   }
 }
 
 @media (max-width: 400px) {
   .section-skills {
     display: grid;
-    grid-template-columns: 100px;
+    grid-template-columns: 104px;
   }
 
   .linha {

@@ -11,14 +11,14 @@ html {
   font-size: 3rem;
   text-align: center;
   color: rgb(0, 255, 255);
-  padding-top: 70px;
+  padding-top: 64px;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .tittles p {
   font-size: 1.5rem;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 32px;
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans", sans-serif;
 }
@@ -26,10 +26,11 @@ html {
 .link-top {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  right: 1px;
-  bottom: 1px;
-  padding: 17px;
+  right: 2px;
+  bottom: 2px;
+padding: 12px;
   position: fixed;
   background-color: rgb(0, 255, 255);
-  box-shadow: 3px 3px 10px #333;
+  box-shadow: 4px 4px 12px #333;
 }
+

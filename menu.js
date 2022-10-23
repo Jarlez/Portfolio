@@ -1,11 +1,37 @@
 const btnMobile = document.getElementById('btn-mobile')
 
-function toggleMenu(){
-const nav = document.querySelector('#nav')
-nav.classList.toggle('active')
+function toggleMenu() {
+  const nav = document.querySelector('#nav')
+  nav.classList.toggle('active')
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+
+
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.pagina', { duration: 1000 });
+sr.reveal('#nav', { duration: 1000 });
+
+
+
+
+const skillbox = document.querySelectorAll(".skillbox");
+skillbox.forEach(element => element.addEventListener("click", function () {
+  this.classList.toggle("flip")
+}))
+
+let btn = document.querySelector(".btn-see");
+let div = document.querySelector(".hidden");
+btn.addEventListener("click", () => {
+  if (div.style.display === "none") {
+    div.style.display = "flex";
+  } else {
+    div.style.display = "none";
+  }
+});
+
 
 
 /* botão de animação "designer e "desenvolvedor"
@@ -56,15 +82,3 @@ el.innerHTML += next;
 showText(el,text,interval)
 
 */
-
-window.sr = ScrollReveal ({ reset: true });
-
-sr.reveal('.pagina',{duration :1000});
-sr.reveal('#nav',{duration :1000});
-
-
-
-const skillbox = document.querySelectorAll(".skillbox");
-skillbox.forEach(element => element.addEventListener("click", function () {
-  this.classList.toggle("flip")
-}))

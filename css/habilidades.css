@@ -2,26 +2,24 @@
   background-color: rgb(16, 16, 16);
 }
 
-
-
 .container-skills {
-  padding-top: 70px;
+  padding-top: 64px;
   display: grid;
-  grid-template-columns: 130px 130px 130px 130px 130px;
+  grid-template-columns: 128px 128px 128px 128px 128px;
   justify-content: center;
   gap: 3.5rem;
-padding-bottom: 70px;
+  padding-bottom: 64px;
 }
 
 .skillbox img {
-  width: 100px;
+  width: 104px;
 }
 
 .skillbox {
-  width: 130px;
-  height: 130px;
+  width: 136px;
+  height: 136px;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,8 +33,8 @@ padding-bottom: 70px;
 }
 
 .face {
-  width: 100px;
-  height: 100px;
+  width: 104px;
+  height: 104px;
   display: flex;
   color: rgb(255, 255, 255);
   position: absolute;
@@ -52,7 +50,7 @@ padding-bottom: 70px;
 }
 
 .back p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgb(0, 0, 0);
   font-family: "Josefin Sans", sans-serif;
 }
@@ -66,12 +64,10 @@ padding-bottom: 70px;
   color: rgb(0, 0, 0);
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
-  padding-top: 7px;
+  padding-top: 8px;
   list-style-type: none;
   font-weight: bold;
 }
-
-
 
 @media (max-width: 950px) {
   .container-skills {
@@ -89,12 +85,12 @@ padding-bottom: 70px;
   .container-skills {
     gap: 2rem;
     display: grid;
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 128px 128px;
   }
 }
 
 @media (max-width: 400px) {
   .container-skills {
-    grid-template-columns: 130px;
+    grid-template-columns: 128px;
   }
 }
