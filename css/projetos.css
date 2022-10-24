@@ -12,6 +12,31 @@
   width: 100%;
 }
 
+.producao {
+  background-color: rgb(0, 0, 0);
+  width: 90%;
+  height: 110px;
+  display: flex;
+  margin: 15px 13px;
+  padding-top: 36px;
+}
+
+.faixa h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.faixa {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
 .hidden {
   display: none;
   padding-top: 64px;
@@ -165,9 +190,8 @@
   }
 }
 
-@media(max-width: 400px){
- .alinhar-card {
+@media (max-width: 400px) {
+  .alinhar-card {
     width: 100%;
   }
-
 }
