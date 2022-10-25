@@ -1,5 +1,6 @@
 #contato {
   background-color: rgb(16, 16, 16);
+  padding-bottom: 64px; 
 }
 
 .align {
@@ -12,11 +13,10 @@
 
 .info {
   margin-top: 64px;
-  padding-bottom: 32px;
 }
 
 .img-info img {
-  width: 15%;
+  width: 14%;
   cursor: pointer;
 }
 
@@ -52,7 +52,6 @@
   .align {
     display: grid;
     grid-template-columns: 180px 180px 180px;
-   
   }
 
   .acc h2 {
@@ -70,7 +69,7 @@
   }
 
   .info {
-    margin-top: 36px;
+    margin-top: 40px;
     padding-bottom: 8px;
     margin-bottom: 8px;
   }

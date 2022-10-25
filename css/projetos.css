@@ -107,6 +107,7 @@
 .see-more {
   padding-top: 56px;
   text-align: center;
+  transition: 0.6s;
 }
 
 .githublink {

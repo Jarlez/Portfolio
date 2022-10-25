@@ -11,7 +11,7 @@
   <title>Portfólio | Jarles Sayhare</title>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
   <link rel="icon" href="img/jsicone.png" type="image/x-icon" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/navbar.css" />
@@ -26,7 +26,7 @@
 
 </head>
 
-<body onload="typeWriter(fName);">
+<body">
 
   <!-- NavBar -->
   <nav id="nav">
@@ -54,51 +54,14 @@
     </div>
   </nav>
 
+<!-- Botão do topo -->
   <a href="#nav" class="link-top">&#9650</a>
 
-  <!-- Menu 
+ <!-- Inicio -->
   <section id="inicio">
-    <div class="pagina">
-      <div class="info-menu">
-        <div class="designer">
-          <button id="designer-button">
-            <code>designer</code>
-          </button>
-          <div class="paragrafo1">
-            <p>
-              Manipulação e melhoria de imagens.<br />
-              Criação de artes utilizando PhotoShop <br />
-              Também trabalho com edição de vídeo.
-            </p>
-          </div>
-        </div>
 
-        <div class="perfil">
-          <img src="img/imgperfil.png " alt="logo " />
-          <p class="texto">
-            Olá, Seja Bem-Vindo ao meu site.<br />Me chamo
-            <strong>Jarles Sayhare,</strong> <br />
-            Desenvolvedor <strong>Front-End.</strong>
-          </p>
-        </div>
-
-        <div class="desenvolvedor">
-          <button id="desenvolvedor-button">
-            <code> &lt; desenvolvedor
-              &gt; </code>
-          </button>
-          <div class="paragrafo2">
-            <p>
-              Desenvolvedor Web Front-End junior.<br />Sempre buscando
-              produzir um código<br />
-              limpo e responsivo em meus projetos.
-            </p>
-          </div>
-        </div>
-
-      </div>
   </section>
-   -->
+
 
   <!-- Projetos -->
   <section id="projetos">
@@ -196,7 +159,9 @@
       </div>
 
       <div class="see-more">
-        <button class="btn-see"><img src="img/svg/vermais.svg" /></button>
+        <button class="btn-see">
+          <img id="troca" src="img/vermais.png" onclick="trocar()">
+        </button>
       </div>
 
       <div class="githublink">
@@ -220,7 +185,7 @@
 
         <div class="paragrafo">
           <p>
-            Meu nome é Jarles Sayhare, sou desenvolvedor front-end junior
+            Meu nome é Jarles Sayhare, sou desenvolvedor WEB Front-end junior
             e um entusiasta por tecnologia. Gosto muito de programar, desenvolver, criar, resolver
             problemas, inventar e reinventar. Procuro sempre estar
             estudando e aprendendo novas práticas para melhorar
@@ -599,6 +564,6 @@
 
   <script defer src="menu.js"></script>
 
-</body>
+  </body>
 
 </html>

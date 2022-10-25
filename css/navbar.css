@@ -1,6 +1,5 @@
 #nav {
   background: rgb(0, 0, 0);
-  visibility: hidden;
 }
 
 .container {
@@ -45,7 +44,6 @@
   margin: 0 0.5rem;
 }
 
-
 .social img:hover {
   transform: scale(1.1);
   transition-duration: 0.5s;
@@ -72,7 +70,6 @@
     color: rgb(0, 255, 255);
     transition-duration: 0.5s;
     transition-property: all;
-
   }
 
   #menu {
