@@ -9,6 +9,7 @@
 
 .bloco-img img {
   width: 90%;
+  height: auto;
   box-shadow: -12px 12px rgb(16, 16, 16), 12px -12px rgb(145, 145, 145);
 }
 

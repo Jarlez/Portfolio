@@ -36,10 +36,12 @@
 
 .img-left img {
   height: 2.8rem;
+  width: auto;
 }
 
 .social-icons img {
   height: 2.2rem;
+  width: auto;
 }
 
 #menu ul {
