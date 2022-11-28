@@ -14,7 +14,6 @@
 
 .titulo h1 {
   font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
 
@@ -25,7 +24,6 @@
 .paragrafo p {
   font-size: 1.4rem;
   text-indent: 2em;
-  font-family: "Josefin Sans", sans-serif;
   max-width: 37.5rem;
 }
 
@@ -53,7 +51,7 @@
   border: 0.1rem solid rgb(0, 0, 0);
 }
 
-@media (max-width: 1157px) {
+@media (max-width: 1150px) {
   .conteudo {
     display: grid;
   }
@@ -85,19 +83,14 @@
 }
 
 @media (max-width: 750px) {
-  .bloco-tittle h1 {
-    font-size: 3.5rem;
-  }
-
   .paragrafo p {
-    font-size: 1.3rem;
-    max-width: 31rem;
+    max-width: 36rem;
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 600px) {
   .bloco-tittle h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .paragrafo {
@@ -105,23 +98,19 @@
   }
 
   .paragrafo p {
-    font-size: 1.3rem;
+    text-align: left;
     text-indent: 0;
-    width: 18.75rem;
+    width: 25rem;
   }
   .paragrafo {
     display: flex;
     justify-content: center;
   }
-
-  .bloco-img img {
-    width: 70%;
-  }
 }
 
 @media (max-width: 425px) {
-  .bloco-img img {
-    width: 17.5rem;
-    height: 11rem;
+  .paragrafo p {
+    text-align: left;
+    width: 19rem;
   }
 }

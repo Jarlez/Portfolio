@@ -19,7 +19,7 @@
   width: 8.5rem;
   height: 8.5rem;
   background-color: rgb(255, 255, 255);
-  border-radius: 24px;
+  border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,6 @@
 .back p {
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .list {
@@ -75,13 +74,7 @@
   }
 }
 
-@media (max-width: 850px) {
-  .container-skills {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 810px) {
+@media (max-width: 800px) {
   .container-skills {
     gap: 2rem;
     display: grid;

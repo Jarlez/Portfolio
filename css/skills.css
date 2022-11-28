@@ -4,76 +4,71 @@
 
 .section-skills {
   display: grid;
-  grid-template-columns: 104px 8px 104px 8px 104px 8px 104px 8px 104px 8px 104px;
+  grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem;
   text-align: center;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  gap: 1.25rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .img-card img {
-  width: 30%;
-  cursor: pointer;
+  width: 2.5rem;
 }
 
 .valores p {
   letter-spacing: 1px;
-  padding-top: 8px;
+  padding-top: 0.5rem;
   font-size: 0.8rem;
-  font-family: "Josefin Sans", sans-serif;
   color: rgb(0, 255, 255);
 }
 
 .valores h2 {
   font-size: 1.5rem;
-  font-family: "Josefin Sans", sans-serif;
-  padding-top: 8px;
+  padding-top: 0.5rem;
   color: rgb(255, 255, 255);
 }
 
 .linha {
   width: 1px;
-  height: 120px;
+  height: 7.5rem;
   border-right: 1px solid rgb(145, 145, 145);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .section-skills {
-    grid-template-columns: 104px 8px 104px 8px 104px 8px;
-    margin-left: 30px;
+    grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem;
+    margin-left: 1.9rem;
   }
 
   .linha:nth-child(6) {
-    border-right: 1px transparent;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 600px) {
   .section-skills {
-    display: grid;
-    grid-template-columns: 104px 8px 104px 8px;
-    margin-left: 30px;
+    grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem;
+    margin-left: 2.5rem;
   }
   .linha:nth-child(6) {
-    border-right: 1px solid rgb(145, 145, 145);
+    visibility: initial;
   }
 
   .linha:nth-child(4) {
-    border-right: 1px transparent;
+    visibility: hidden;
   }
 
   .linha:nth-child(8) {
-    border-right: 1px transparent;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 400px) {
   .section-skills {
-    display: grid;
-    grid-template-columns: 104px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: initial;
   }
 
   .linha {

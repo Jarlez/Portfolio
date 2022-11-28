@@ -1,76 +1,43 @@
 #contato {
   background-color: rgb(16, 16, 16);
-  padding-bottom: 64px; 
 }
 
 .align {
-  display: grid;
-  grid-template-columns: 304px 304px 304px;
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  padding: 3.5rem;
 }
 
 .info {
-  margin-top: 64px;
+  width: 9.5rem;
 }
 
 .img-info img {
-  width: 14%;
+  height: 2.5rem;
   cursor: pointer;
 }
 
 .acc h2 {
-  letter-spacing: 1px;
-  padding-top: 24px;
-  font-size: 0.9rem;
-  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1.5rem;
+  font-size: 1rem;
   color: rgb(0, 255, 255);
 }
 
 .acc p {
-  font-family: "Josefin Sans", sans-serif;
-  padding-top: 16px;
+  padding-top: 0.5rem;
+  font-size: 1rem;
   color: rgb(110, 110, 110);
 }
 
-@media (max-width: 915px) {
+@media (max-width: 650px) {
   .align {
-    grid-template-columns: 224px 224px 224px;
-  }
-
-  .acc h2 {
-    font-size: 0.7rem;
-  }
-
-  .acc p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 680px) {
-  .align {
-    display: grid;
-    grid-template-columns: 180px 180px 180px;
-  }
-
-  .acc h2 {
-    font-size: 0.7rem;
-  }
-
-  .acc p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .align {
-    grid-template-columns: 224px;
+    flex-direction: column;
+    padding: 1.5rem;
   }
 
   .info {
-    margin-top: 40px;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+    width: initial;
+    padding: 1.5rem;
   }
 }

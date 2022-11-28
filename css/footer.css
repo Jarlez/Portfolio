@@ -4,58 +4,60 @@
 
 .top {
   display: grid;
-  grid-template-columns: 220px 10px 220px;
-  padding-top: 12px;
+  grid-template-columns: 14rem 0.7rem 14rem;
+  padding-top: 0.7rem;
   text-align: center;
   justify-content: center;
 }
 
-.image {
-  padding-top: 8px;
-  margin-left: 110px;
-}
-
-#linha-vertical {
-  height: 80px;
-  border-right: 1px solid rgb(145, 145, 145);
-}
-
 .top h2 {
-  padding-top: 16px;
-  font-family: "Josefin Sans", sans-serif;
+  padding-top: 1rem;
   font-size: 1.1rem;
   color: rgb(0, 255, 255);
 }
 
-.footer-icon img {
-  width: 20px;
+.image {
+  padding-top: 0.5rem;
+  margin-left: 7rem;
+}
+
+.image img {
+  height: 4.5rem;
+}
+
+#linha-vertical {
+  height: 5rem;
+  border-right: 1px solid rgb(145, 145, 145);
 }
 
 .footer-icon {
-  padding-top: 4px;
+  padding-top: 0.2rem;
   display: inline-grid;
-  grid-template-columns: 35px 35px 35px 35px;
+  grid-template-columns: 2rem 2rem 2rem 2rem;
+}
+
+.footer-icon img {
+  width: 1.25rem;
 }
 
 .bottom {
-  padding-top: 8px;
+  padding-top: 0.5rem;
   text-align: center;
-  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
 }
 
 .bottom p {
   font-size: 0.7rem;
   color: rgb(255, 255, 255);
-  font-family: "Josefin Sans", sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .top {
-    grid-template-columns: 100px;
+    grid-template-columns: 15rem;
   }
 
   .top h2 {
-    padding-top: 8px;
+    padding-top: 0.4rem;
   }
 
   .image {
@@ -64,10 +66,5 @@
 
   #linha-vertical {
     display: none;
-  }
-
-  .footer-icon {
-    justify-content: center;
-    margin-left: 22px;
   }
 }
