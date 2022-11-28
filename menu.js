@@ -1,3 +1,4 @@
+
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu() {
@@ -37,51 +38,50 @@ function trocar() {
 
 
 
-/* botão de animação "designer e "desenvolvedor"
+const textDisplay = document.getElementById('typewriter')
+const phrases = ['DESENVOLVIMENTO WEB', 'HTML,CSS E JAVASCRIPT', 'SITES RESPONSIVOS']
+let i = 0
+let j = 0 
+let currentPhrase = []
+let isDeleting = false
+let isEnd = false
 
-let btn = document.querySelector("#designer");
-let div = document.querySelector(".paragrafo1");
-btn.addEventListener("click", () => {
-  if (div.style.display === "none") {
-    div.style.display = "flex";
-  } else {
-    div.style.display = "none";
+function loop () {
+  isEnd = false
+  textDisplay.innerHTML = currentPhrase.join('')
+
+  if (i < phrases.length) {
+
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase.push(phrases[i][j])
+      j++
+      textDisplay.innerHTML = currentPhrase.join('')
+    }
+
+    if(isDeleting && j <= phrases[i].length) {
+      currentPhrase.pop(phrases[i][j])
+      j--
+      textDisplay.innerHTML = currentPhrase.join('')
+    }
+
+    if (j == phrases[i].length) {
+      isEnd = true
+      isDeleting = true
+    }
+
+    if (isDeleting && j === 0) {
+      currentPhrase = []
+      isDeleting = false
+      i++
+      if (i === phrases.length) {
+        i = 0
+      }
+    }
   }
-});
-
-let btn1= document.querySelector("#desenvolvedor");
-let div1 = document.querySelector(".paragrafo2");
-btn1.addEventListener("click", () => {
-  if (div1.style.display === "none") {
-    div1.style.display = "block";
-  } else {
-    div1.style.display = "none";
-  }
-}); 
-
-
-
-const el = document.querySelector(".texto");
-const text = "Olá, Seja Bem-Vindo ao meu site.\n Me chamo Jarles Sayhare, \nDesenvolvedor Front-End.";
-const interval = 300;
-
-function showText(el,text,interval){
-
-const char=text.split("").reverse();
-
-const typer= setInterval(() => {
-
-if(!char.length) {
-return clearInterval(typer);
-}
-const next = char.pop();
-
-el.innerHTML += next;
-
-}, interval);
-
+  const spedUp = Math.random() * (80 -50) + 50
+  const normalSpeed = Math.random() * (100 -200) + 250
+  const time = isEnd ? 1500 : isDeleting ? spedUp : normalSpeed
+  setTimeout(loop, time)
 }
 
-showText(el,text,interval)
-
-*/
+loop()

@@ -7,61 +7,46 @@
 
 .alinhar-card {
   display: flex;
-  padding-top: 64px;
-  gap: 64px;
-  width: 100%;
+  padding-top: 4rem;
+  gap: 4rem;
 }
 
 .producao {
   background-color: rgb(0, 0, 0);
-  width: 90%;
-  height: 110px;
+  height: 7rem;
   display: flex;
-  margin: 15px 13px;
-  padding-top: 36px;
+  margin: 1rem 1rem;
+  padding-top: 2rem;
 }
 
 .faixa h3 {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 255, 255);
-  margin: auto;
-  padding-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
 .faixa {
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   margin: auto;
-}
-
-.hidden {
-  display: none;
-  padding-top: 64px;
-  gap: 64px;
-  width: 100%;
 }
 
 .card-projeto {
   background-color: rgb(255, 255, 255);
-  height: 304px;
+  height: 19rem;
   width: 50%;
-  box-shadow: 8px 8px rgb(145, 145, 145);
+  box-shadow: 0.5rem 0.5rem rgb(145, 145, 145);
 }
 
 .card-projeto img {
   width: 90%;
-  height: 160px;
+  height: 10rem;
   display: flex;
   margin: auto;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .textoimg {
   text-align: center;
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .textoimg h2 {
@@ -74,8 +59,8 @@
   color: rgb(250, 250, 250);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
-  width: 112px;
-  height: 36px;
+  width: 7rem;
+  height: 2.2rem;
   transition: 2s;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -84,8 +69,9 @@
 }
 
 .botao-projeto {
-  padding-top: 24px;
-  text-align: center;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .botao-projeto button:hover {
@@ -94,25 +80,26 @@
   cursor: pointer;
 }
 
-.see-more img {
-  width: 48px;
+.botao-vermais img {
+  width: 3rem;
 }
 
-.see-more button {
-  border: none;
+.botao-vermais button {
   background-color: rgb(16, 16, 16);
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
-.see-more {
-  padding-top: 56px;
-  text-align: center;
+.botao-vermais {
+  padding-top: 3.5rem;
+  display: flex;
+  justify-content: center;
   transition: 0.6s;
 }
 
 .githublink {
-  padding-top: 36px;
-  padding-bottom: 48px;
+  padding: 2.5rem 2.5rem;
   text-align: center;
 }
 
@@ -142,7 +129,7 @@
 
   .card-projeto {
     margin: auto;
-    height: 304px;
+    height: 19rem;
     width: 30%;
   }
 }
@@ -160,34 +147,25 @@
 @media (max-width: 810px) {
   .alinhar-card {
     margin: auto;
-    width: 400px;
+    width: 25rem;
     flex-wrap: wrap;
   }
 
   .hidden {
-    padding-top: 0;
+    padding-top: initial;
     margin: auto;
     flex-wrap: wrap;
   }
 
   .card-projeto {
-    margin: auto;
     width: 70%;
-    margin-top: 50px;
+    margin-top: 3rem;
   }
 }
 
 @media (max-width: 600px) {
   .alinhar-card {
-    margin: auto;
-    width: 400px;
-    flex-wrap: wrap;
-  }
-
-  .hidden {
-    padding-top: 0;
-    margin: auto;
-    flex-wrap: wrap;
+    width: 25rem;
   }
 }
 

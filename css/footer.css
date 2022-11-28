@@ -51,7 +51,7 @@
 
 @media (max-width: 600px) {
   .top {
-    grid-template-columns: 10px;
+    grid-template-columns: 100px;
   }
 
   .top h2 {

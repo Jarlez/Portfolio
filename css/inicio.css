@@ -1,0 +1,60 @@
+#inicio {
+  background-image: url(/./img/workspace.jpg);
+  height: 40rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.textos {
+  position: absolute;
+  right: 7rem;
+  top: 11rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.textos h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+}
+
+.textos h2 {
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 690px) {
+  .textos {
+    position: initial;
+    right: initial;
+    top: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textos h1 {
+    padding-top: 9.3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .textos h1 {
+    font-size: 2.5rem;
+  }
+  .textos h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .textos h1 {
+    font-size: 2rem;
+  }
+  .textos h2 {
+    font-size: 1rem;
+  }
+}

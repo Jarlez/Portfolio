@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet" />
   <link rel="icon" href="img/jsicone.png" type="image/x-icon" />
 
-
   <!-- CSS -->
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/inicio.css" />
@@ -23,7 +22,6 @@
   <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/skills.css">
-
 </head>
 
 <body">
@@ -32,7 +30,7 @@
   <nav id="nav">
     <div class="container">
       <a href="index.html" target="_self" class="img-left">
-        <img src="img/JSlogo.png" height="45" />
+        <img src="img/JSlogo.png" />
       </a>
       <button id="btn-mobile">&#9776;</button>
       <div id="menu">
@@ -44,24 +42,32 @@
           <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
 
-        <div class="social">
-          <a href="https://github.com/Jarlez"><img src="img/github.png" height="35"
+        <div class="social-icons">
+          <a href="https://github.com/Jarlez" target="_blank"><img src="img/github.png"
               onmouseover="this.src='img/githubinvertido.png'" onmouseout="this.src='img/github.png'" /></a>
-          <a href="https://www.linkedin.com/in/jarlessayhare7/"><img src="img/linkedin.png" height="35"
+          <a href="https://www.linkedin.com/in/jarlessayhare7/" target="_blank"><img src="img/linkedin.png"
               onmouseover="this.src='img/linkedinazul.png'" onmouseout="this.src='img/linkedin.png'" /></a>
         </div>
       </div>
     </div>
   </nav>
 
-<!-- Botão do topo -->
+  <!-- Botão do topo -->
   <a href="#nav" class="link-top">&#9650</a>
 
- <!-- Inicio -->
+  <!-- Inicio -->
   <section id="inicio">
 
-  </section>
+    <div class="textos">
+      <h1>JARLES SAYAHRE</strong></h1>
+      <h2>DESENVOLVEDOR FRONT-END</h2>
+      <h2>DESIGNER GRÁFICO</h2>
+      <h2>EDITOR DE VÍDEO</h2>
+      <h2>FREELANCER</h2>
+      <h2><strong id="typewriter"></strong></h2>
+    </div>
 
+  </section>
 
   <!-- Projetos -->
   <section id="projetos">
@@ -158,7 +164,7 @@
 
       </div>
 
-      <div class="see-more">
+      <div class="botao-vermais">
         <button class="btn-see">
           <img id="troca" src="img/vermais.png" onclick="trocar()">
         </button>
@@ -175,7 +181,7 @@
     <div class="conteudo">
 
       <div class="bloco-img">
-        <img src="img/fotoj.png" alt="imagem sobre mim">
+        <img src="img/profile.png" alt="imagem sobre mim">
       </div>
 
       <div class="bloco-tittle">
@@ -199,13 +205,11 @@
       </div>
     </div>
 
-
     <div class="botao-sobremim">
-      <a href="download/Currículo_Jarles_Sayhare.pdf"><button>Currículo</button></a>
+      <a href="download/Currículo_Jarles_Sayhare.pdf" target="_blank"><button>Currículo</button></a>
     </div>
 
   </section>
-
 
   <!-- Habilidades -->
   <section id="habilidades">
@@ -385,7 +389,7 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/work.svg" />
         </div>
         <div class="valores">
           <h2>3</h2>
@@ -398,7 +402,7 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/code.svg" />
         </div>
         <div class="valores">
           <h2>+3000</h2>
@@ -411,7 +415,7 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/projetos.svg" />
         </div>
         <div class="valores">
           <h2>2</h2>
@@ -424,10 +428,10 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/copocafe.svg" />
         </div>
         <div class="valores">
-          <h2>100</h2>
+          <h2>+100</h2>
         </div>
         <div class="valores">
           <p>COPOS DE CAFÉ</p>
@@ -437,7 +441,7 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/certificado.svg" />
         </div>
         <div class="valores">
           <h2>6</h2>
@@ -450,7 +454,7 @@
 
       <div class="info-card">
         <div class="img-card">
-          <img src="img/svg/email.svg" />
+          <img src="img/svg/relogio.svg" />
         </div>
         <div class="valores">
           <h2>+2000</h2>
@@ -527,7 +531,8 @@
     <div class="top">
 
       <div class="image">
-        <img src="img/JSlogo.png" height="70" />
+        <a href="#nav" target="_self">
+          <img href="index.html" src="img/JSlogo.png" height="70" /></a>
       </div>
 
       <div id="linha-vertical"></div>

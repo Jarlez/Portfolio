@@ -1,13 +1,10 @@
 #sobre-mim {
-  padding-top: 80px;
+  padding-top: 5rem;
 }
-
-
 
 .conteudo {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .bloco-img img {
@@ -21,23 +18,23 @@
   text-align: center;
 }
 
+.paragrafo {
+  padding-top: 1.5rem;
+}
+
 .paragrafo p {
   font-size: 1.4rem;
   text-indent: 2em;
   font-family: "Josefin Sans", sans-serif;
-  max-width: 600px;
-}
-
-.paragrafo {
-  padding-top: 24px;
+  max-width: 37.5rem;
 }
 
 .botao-sobremim button {
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3rem;
-  width: 136px;
-  height: 40px;
+  width: 8.5rem;
+  height: 2.5rem;
   transition: 2s;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
@@ -46,8 +43,8 @@
 }
 
 .botao-sobremim {
-  padding-top: 64px;
-  padding-bottom: 56px;
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -62,7 +59,8 @@
   }
 
   .bloco-img {
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .bloco-tittle h1 {
@@ -72,13 +70,13 @@
   .paragrafo {
     text-align: center;
     margin: auto;
-    padding-top: 48px;
+    padding-top: 3rem;
   }
 
   .paragrafo p {
     font-size: 1.7rem;
     text-indent: 0;
-    max-width: 700px;
+    max-width: 43rem;
   }
 
   .bloco-tittle {
@@ -88,13 +86,12 @@
 
 @media (max-width: 750px) {
   .bloco-tittle h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .paragrafo p {
     font-size: 1.3rem;
-    text-indent: 0;
-    max-width: 500px;
+    max-width: 31rem;
   }
 }
 
@@ -104,19 +101,17 @@
   }
 
   .paragrafo {
-    padding-top: 16px;
+    padding-top: 2rem;
   }
 
   .paragrafo p {
     font-size: 1.3rem;
     text-indent: 0;
-    width: 300px;
+    width: 18.75rem;
   }
   .paragrafo {
-    text-align: center;
-    margin: auto;
-    justify-items: center;
-    display: grid;
+    display: flex;
+    justify-content: center;
   }
 
   .bloco-img img {
@@ -125,24 +120,8 @@
 }
 
 @media (max-width: 425px) {
-  .bloco-tittle h1 {
-    font-size: 2.5rem;
-  }
-
-  .paragrafo p {
-    font-size: 1.3rem;
-    text-indent: 0;
-    width: 300px;
-  }
-  .paragrafo {
-    text-align: center;
-    margin: auto;
-    justify-items: center;
-    display: grid;
-  }
-
   .bloco-img img {
-    width: 280px;
-    height: 180px;
+    width: 17.5rem;
+    height: 11rem;
   }
 }
