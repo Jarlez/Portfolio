@@ -24,7 +24,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 12px;
+  padding: 1rem;
 }
 
 .navbar-nav a:hover {
@@ -36,12 +36,12 @@
 
 .img-left img {
   height: 2.8rem;
-  width: auto;
+  width: 3.7rem;
 }
 
 .social-icons img {
   height: 2.2rem;
-  width: auto;
+  width: 2.3rem;
 }
 
 #menu ul {
