@@ -4,7 +4,7 @@
 
 .container {
   display: flex;
-  padding: 0.4rem 7%;
+  padding: 0.4rem 5%;
 }
 
 #btn-mobile {
@@ -99,8 +99,11 @@
     transition: 0.6s;
   }
 
+.social-icons{
+padding-top: 5px;
+}
   #nav.active #menu {
-    height: calc(340px - 67px);
+    height: calc(350px - 67px);
     visibility: visible;
   }
 

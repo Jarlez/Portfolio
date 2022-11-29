@@ -1,9 +1,6 @@
-
-
 .textos {
-  position: absolute;
-  right: 7rem;
-  top: 11rem;
+  float: right;
+  padding: 7rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -21,16 +18,19 @@
 
 @media (max-width: 690px) {
   .textos {
-    position: initial;
-    right: initial;
-    top: initial;
+    float: initial;
+    padding: initial;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .textos h1 {
-    padding-top: 9.3rem;
+    padding-top: 5rem;
+  }
+
+  #inicio {
+    height: 35rem;
   }
 }
 
