@@ -37,9 +37,15 @@
 @media (max-width: 430px) {
   .textos h1 {
     font-size: 2.5rem;
+    padding-top: 3rem;
   }
+
   .textos h2 {
     font-size: 1.3rem;
+  }
+
+  #inicio {
+    height: 29rem;
   }
 }
 
@@ -47,7 +53,13 @@
   .textos h1 {
     font-size: 2rem;
   }
+
   .textos h2 {
     font-size: 1rem;
+    padding-top: 2rem;
+  }
+
+  #inicio {
+    height: 24rem;
   }
 }

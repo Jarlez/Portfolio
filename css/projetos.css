@@ -146,6 +146,7 @@
 
 @media (max-width: 810px) {
   .alinhar-card {
+    padding-top: 1.5rem;
     margin: auto;
     width: 25rem;
     flex-wrap: wrap;
@@ -159,7 +160,7 @@
 
   .card-projeto {
     width: 70%;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 

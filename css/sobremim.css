@@ -82,35 +82,10 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 720px) {
   .paragrafo p {
-    max-width: 36rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .bloco-tittle h1 {
-    font-size: 3rem;
-  }
-
-  .paragrafo {
-    padding-top: 2rem;
-  }
-
-  .paragrafo p {
-    text-align: left;
-    text-indent: 0;
-    width: 25rem;
-  }
-  .paragrafo {
+    width: 90%;
     display: flex;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 425px) {
-  .paragrafo p {
-    text-align: left;
-    width: 19rem;
+    margin: auto;
   }
 }

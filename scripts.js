@@ -39,7 +39,7 @@ function trocar() {
 
 
 const textDisplay = document.getElementById('typewriter')
-const phrases = ['DESENVOLVIMENTO WEB', 'HTML,CSS E JAVASCRIPT', 'SITES RESPONSIVOS']
+const phrases = ['DESENVOLVIMENTO WEB', 'HTML , CSS E JAVASCRIPT', 'SITES RESPONSIVOS']
 let i = 0
 let j = 0
 let currentPhrase = []
