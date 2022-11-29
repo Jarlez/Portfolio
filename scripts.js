@@ -41,12 +41,12 @@ function trocar() {
 const textDisplay = document.getElementById('typewriter')
 const phrases = ['DESENVOLVIMENTO WEB', 'HTML,CSS E JAVASCRIPT', 'SITES RESPONSIVOS']
 let i = 0
-let j = 0 
+let j = 0
 let currentPhrase = []
 let isDeleting = false
 let isEnd = false
 
-function loop () {
+function loop() {
   isEnd = false
   textDisplay.innerHTML = currentPhrase.join('')
 
@@ -58,7 +58,7 @@ function loop () {
       textDisplay.innerHTML = currentPhrase.join('')
     }
 
-    if(isDeleting && j <= phrases[i].length) {
+    if (isDeleting && j <= phrases[i].length) {
       currentPhrase.pop(phrases[i][j])
       j--
       textDisplay.innerHTML = currentPhrase.join('')
@@ -78,8 +78,8 @@ function loop () {
       }
     }
   }
-  const spedUp = Math.random() * (80 -50) + 50
-  const normalSpeed = Math.random() * (100 -200) + 250
+  const spedUp = Math.random() * (80 - 50) + 50
+  const normalSpeed = Math.random() * (100 - 200) + 250
   const time = isEnd ? 1500 : isDeleting ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
