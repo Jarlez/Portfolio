@@ -39,7 +39,7 @@ function trocar() {
 
 
 const textDisplay = document.getElementById('typewriter')
-const phrases = ['DESENVOLVIMENTO WEB', 'HTML , CSS E JAVASCRIPT', 'SITES RESPONSIVOS']
+const phrases = ['DESENVOLVIMENTO WEB.', 'HTML , CSS E JAVASCRIPT.', 'SITES RESPONSIVOS.']
 let i = 0
 let j = 0
 let currentPhrase = []
@@ -79,9 +79,10 @@ function loop() {
     }
   }
   const spedUp = Math.random() * (80 - 50) + 50
-  const normalSpeed = Math.random() * (100 - 200) + 250
+  const normalSpeed = Math.random() * 150
   const time = isEnd ? 1500 : isDeleting ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
 
 loop()
+
