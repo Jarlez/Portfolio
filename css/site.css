@@ -4,7 +4,7 @@
 }
 
 .background-image {
-  background-image: url(/./img/workspace.webp);
+  background-image: url(../img/workspace.webp);
   height: 40rem;
   background-attachment: fixed;
   background-repeat: no-repeat;
