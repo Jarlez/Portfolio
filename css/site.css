@@ -16,14 +16,8 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-p {
-  font-family: "Josefin Sans", sans-serif;
-}
-
+h1,
+p,
 h2 {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -33,7 +27,6 @@ h2 {
   text-align: center;
   color: #00ffff;
   padding-top: 64px;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .tittles p {
@@ -41,7 +34,6 @@ h2 {
   text-align: center;
   padding-top: 32px;
   color: rgb(255, 255, 255);
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .link-top {

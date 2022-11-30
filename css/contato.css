@@ -1,12 +1,12 @@
 #contato {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(6, 6, 6);
 }
 
 .align {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding: 3.5rem;
+  padding: 4rem;
 }
 
 .info {

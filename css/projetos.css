@@ -1,5 +1,5 @@
 #projetos {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(6, 6, 6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@
 }
 
 .botao-vermais button {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(6, 06, 06);
   cursor: pointer;
   outline: none;
   border: none;

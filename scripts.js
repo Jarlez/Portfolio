@@ -25,7 +25,6 @@ btn.addEventListener("click", () => {
   }
 });
 
-
 var imgAtual = "img/vermais.png";
 var imgAnterior = "img/vermenos.png";
 
