@@ -100,10 +100,10 @@
   }
 
 .social-icons{
-padding-top: 5px;
+padding-top: 0.3rem;
 }
   #nav.active #menu {
-    height: calc(350px - 67px);
+    height: calc(21.9rem - 4.1rem);
     visibility: visible;
   }
 
