@@ -3,8 +3,10 @@
 }
 
 .align {
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
+  margin: auto;
   text-align: center;
   padding: 4rem;
 }
@@ -30,6 +32,14 @@
   font-size: 1rem;
   color: rgb(255, 255, 255);
 }
+
+.info img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+
 
 @media (max-width: 650px) {
   .align {

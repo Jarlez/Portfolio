@@ -11,6 +11,10 @@
   gap: 4rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .producao {
   background-color: rgb(0, 0, 0);
   height: 7rem;
