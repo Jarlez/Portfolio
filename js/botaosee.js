@@ -1,3 +1,13 @@
+var imgAtual = "img/vermais.webp";
+var imgAnterior = "img/vermenos.webp";
+
+function trocar() {
+    document.getElementById("troca").src = imgAtual;
+    let trc = imgAtual;
+    imgAtual = imgAnterior;
+    imgAnterior = trc;
+}
+
 const skillbox = document.querySelectorAll(".skillbox");
 skillbox.forEach(element => element.addEventListener("click", function () {
     this.classList.toggle("flip")
@@ -13,12 +23,4 @@ btn.addEventListener("click", () => {
     }
 });
 
-var imgAtual = "img/vermais.webp";
-var imgAnterior = "img/vermenos.webp";
 
-function trocar() {
-    document.getElementById("troca").src = imgAtual;
-    let trc = imgAtual;
-    imgAtual = imgAnterior;
-    imgAnterior = trc;
-}
