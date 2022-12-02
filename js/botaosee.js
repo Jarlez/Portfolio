@@ -13,8 +13,8 @@ btn.addEventListener("click", () => {
     }
 });
 
-var imgAtual = "img/vermais.png";
-var imgAnterior = "img/vermenos.png";
+var imgAtual = "img/vermais.webp";
+var imgAnterior = "img/vermenos.webp";
 
 function trocar() {
     document.getElementById("troca").src = imgAtual;
