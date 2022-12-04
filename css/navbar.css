@@ -99,9 +99,9 @@
     transition: 0.6s;
   }
 
-.social-icons{
-padding-top: 0.3rem;
-}
+  .social-icons {
+    padding-top: 0.3rem;
+  }
   #nav.active #menu {
     height: calc(21.9rem - 4.1rem);
     visibility: visible;

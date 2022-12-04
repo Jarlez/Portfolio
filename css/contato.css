@@ -39,8 +39,6 @@
   transition-property: all;
 }
 
-
-
 @media (max-width: 650px) {
   .align {
     flex-direction: column;
