@@ -12,10 +12,10 @@
 }
 
 .bloco-img img {
-  display: flex;
-  justify-content: center;
   width: 450px;
   height: 310px;
+  display: flex;
+  justify-content: center;
   box-shadow: -12px 12px rgb(16, 16, 16), 12px -12px rgb(145, 145, 145);
 }
 

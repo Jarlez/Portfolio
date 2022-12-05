@@ -8,7 +8,6 @@ function trocar() {
     imgAtual = trc;
 }
 
-
 const btnShow = document.getElementById('troca')
 
 function toggleMenu() {
