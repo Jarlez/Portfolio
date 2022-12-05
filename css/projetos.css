@@ -145,16 +145,22 @@
 
 @media (max-width: 900px) {
   #projetos.ativo #hiddens {
+    padding-top: 4rem;
     height: 1100px;
   }
 
   .alinhar-card {
     display: grid;
     grid-template-columns: auto;
+    gap: 4rem;
   }
 
   .card-projeto {
     height: 20rem;
     width: 17rem;
+  }
+
+  .botao-vermais {
+    padding-top: 3rem;
   }
 }

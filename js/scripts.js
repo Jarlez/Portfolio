@@ -10,24 +10,24 @@ sr.reveal('.tres', { duration: 5000 });
 sr.reveal('.quatro', { duration: 6000 });
 
 
-const btn = document.getElementById("btn-top")
 
-document.addEventListener('scroll', ocultar)
-
-function ocultar() {
-
-    if (window.scrollY > 600) {
-        btn.style.display = "flex"
-    } else {
-        btn.style.display = "none"
-    }
-}
 
 const skillbox = document.querySelectorAll(".skillbox");
 skillbox.forEach(element => element.addEventListener("click", function () {
     this.classList.toggle("flip")
 }))
 
+
+
+const toTop = document.querySelector(".link-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 700) {
+    toTop.classList.add("ativado");
+  } else {
+    toTop.classList.remove("ativado");
+  }
+})
 
 
 
