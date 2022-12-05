@@ -121,7 +121,7 @@
 
 .githublink a:hover {
   color: rgb(0, 255, 255);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   transition-property: all;
 }
 

@@ -12,25 +12,6 @@ sr.reveal('.quatro', { duration: 6000 });
 
 
 
-const skillbox = document.querySelectorAll(".skillbox");
-skillbox.forEach(element => element.addEventListener("click", function () {
-    this.classList.toggle("flip")
-}))
-
-
-
-const toTop = document.querySelector(".link-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 700) {
-    toTop.classList.add("ativado");
-  } else {
-    toTop.classList.remove("ativado");
-  }
-})
-
-
-
 
 
 
