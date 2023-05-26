@@ -28,12 +28,12 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/site.css" />
   <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/inicio.css" />
-  <link rel="stylesheet" href="css/projetos.css" />
-  <link rel="stylesheet" href="css/sobremim.css">
-  <link rel="stylesheet" href="css/habilidades.css">
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/about_me.css">
+  <link rel="stylesheet" href="css/ability.css">
   <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
 
 </head>
@@ -42,18 +42,19 @@
 
   <!-- NavBar -->
   <nav id="nav">
+
     <div class="container">
       <a href="index.html" target="_self" class="img-left">
-        <img src="img/JSlogo.webp" alt="logomarca do desenvolvedor desse site, jarles" />
+        <img src="img/JSlogo.webp" alt="logomarca do desenvolvedor desse site" />
       </a>
       <button id="btn-mobile">&#9776;</button>
       <div id="menu">
         <ul class="navbar-nav">
-          <li><a href="#inicio" class="nav-link">Início</a></li>
-          <li><a href="#projetos" class="nav-link">Projetos</a></li>
-          <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
-          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-          <li><a href="#contato" class="nav-link">Contato</a></li>
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#about-me" class="nav-link">Sobre mim</a></li>
+          <li><a href="#ability" class="nav-link">Habilidades</a></li>
+          <li><a href="#contact" class="nav-link">Contatos</a></li>
         </ul>
 
         <div class="social-icons">
@@ -65,17 +66,18 @@
         </div>
       </div>
     </div>
+
   </nav>
 
   <!-- Botão voltar ao topo -->
   <a href="#nav" class="link-top">&#9650</a>
 
   <!-- Inicio -->
-  <section id="inicio">
+  <section id="home">
 
     <div class="background-image">
 
-      <div class="textos">
+      <div class="texts">
         <h1>JARLES SAYHARE</strong></h1>
         <h2>DESENVOLVEDOR FRONT-END</h2>
         <h2>DESIGNER GRÁFICO</h2>
@@ -89,101 +91,100 @@
   </section>
 
   <!-- Projetos -->
-  <section id="projetos">
-    <div class="pagina-projeto">
+  <section id="projects">
+    <div>
       <div class="tittles">
         <h1>Projetos</h1>
         <p>Alguns dos meus projetos já finalizados</p>
       </div>
 
+      <div class="allign-card um">
 
-      <div class="alinhar-card">
-
-        <div class="card-projeto">
-          <div class="imgprojeto">
+        <div class="project-card">
+          <div class="img-project">
             <img src="img/ContadordeNumeros.webp" alt="imagem projeto" loading=“lazy” />
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Contador de números</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="card-projeto">
-          <div class="imgprojeto">
+        <div class="project-card">
+          <div class="img-project">
             <img src="img/CalculadoraBasica.webp" alt="imagem projeto" loading=“lazy” />
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Calculadora básica</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="card-projeto">
-          <div class="imgprojeto">
+        <div class="project-card">
+          <div class="img-project">
             <img src="img/Horário.webp" alt="imagem projeto" loading=“lazy” />
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Hora do dia</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
       </div>
 
-      <div class="alinhar-card" id="hiddens">
+      <div class="allign-card" id="hiddens">
 
-        <div class="card-projeto">
-          <div class="imgprojeto producao">
-            <div class="faixa">
+        <div class="project-card">
+          <div class="img-project production">
+            <div class="range">
               <h3>EM PRODUÇÃO</h3>
             </div>
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Calculadora</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/Calculadora" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="card-projeto">
-          <div class="imgprojeto producao">
-            <div class="faixa">
+        <div class="project-card">
+          <div class="img-project production">
+            <div class="range">
               <h3>EM PRODUÇÃO</h3>
             </div>
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Jogo da velha</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/Jogo-da-velha-" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
-        <div class="card-projeto">
-          <div class="imgprojeto producao">
-            <div class="faixa">
+        <div class="project-card">
+          <div class="img-project production">
+            <div class="range">
               <h3>EM PRODUÇÃO</h3>
             </div>
           </div>
-          <div class="textoimg">
+          <div class="text-img">
             <h2>Calendário</h2>
           </div>
-          <div class="botao-projeto">
+          <div class="project-button">
             <a href="https://github.com/Jarlez/Calendario" target="_blank"><button>Ver mais</button></a>
           </div>
         </div>
 
       </div>
 
-      <div class="botao-vermais">
+      <div class="more-button">
         <button class="btn-see">
           <img id="troca" alt="botão expandir e retrair" src="img/vermais.webp" onclick="trocar()">
         </button>
@@ -196,19 +197,19 @@
   </section>
 
   <!-- Sobre mim-->
-  <section id="sobre-mim">
-    <div class="conteudo">
+  <section id="about-me">
+    <div class="content">
 
-      <div class="bloco-tittle">
-        <div class="titulo">
+      <div>
+        <div class="title">
           <h1>Sobre mim</h1>
         </div>
-        <div class="alinhar um">
+        <div class="allign um">
           <div class="bloco-img ">
             <img src="img/profile.webp" alt="imagem sobre mim" loading=“lazy”>
           </div>
 
-          <div class="paragrafo">
+          <div class="paragraph-text">
             <p>
               Meu nome é Jarles Sayhare, sou desenvolvedor WEB Front-end junior
               e um entusiasta por tecnologia. Gosto muito de programar,
@@ -227,7 +228,7 @@
       </div>
     </div>
 
-    <div class="botao-sobremim um">
+    <div class="curriculum">
       <a href="download/Curriculo_Jarles_Sayhare.pdf" title="baixar currículo" target="_blank"
         type="application/pdf"><button>Currículo</button></a>
     </div>
@@ -235,7 +236,7 @@
   </section>
 
   <!-- Habilidades -->
-  <section id="habilidades">
+  <section id="ability">
 
     <div class="tittles">
       <h1>Habilidades</h1>
@@ -248,7 +249,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" alt="card animado HTML5" src="img/svg/html1.svg"
+          <img class="skill-icon" alt="card animado HTML5" src="img/svg/html1.svg"
             onmouseover="this.src='img/svg/html.svg'" onmouseout="this.src='img/svg/html1.svg'" />
         </div>
         <div class="face back">
@@ -264,7 +265,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" alt="card animado CSS3" src="img/svg/css31.svg"
+          <img class="skill-icon" alt="card animado CSS3" src="img/svg/css31.svg"
             onmouseover="this.src='img/svg/css3.svg'" onmouseout="this.src='img/svg/css31.svg'" />
         </div>
         <div class="face back">
@@ -295,7 +296,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/reactjs1.svg" alt="card animado React.js"
+          <img class="skill-icon" src="img/svg/reactjs1.svg" alt="card animado React.js"
             onmouseover="this.src='img/svg/reactjs.svg'" onmouseout="this.src='img/svg/reactjs1.svg'" />
         </div>
         <div class="face back">
@@ -311,7 +312,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/filmora1.svg" alt="card animado Filmora"
+          <img class="skill-icon" src="img/svg/filmora1.svg" alt="card animado Filmora"
             onmouseover="this.src='img/svg/filmora.svg'" onmouseout="this.src='img/svg/filmora1.svg'" />
         </div>
         <div class="face back">
@@ -327,8 +328,8 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/git1.svg" alt="card animado GIT"
-            onmouseover="this.src='img/svg/git.svg'" onmouseout="this.src='img/svg/git1.svg'" />
+          <img class="skill-icon" src="img/svg/git1.svg" alt="card animado GIT" onmouseover="this.src='img/svg/git.svg'"
+            onmouseout="this.src='img/svg/git1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -343,7 +344,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/github1.svg" alt="card animado GITHUB"
+          <img class="skill-icon" src="img/svg/github1.svg" alt="card animado GITHUB"
             onmouseover="this.src='img/svg/github.svg'" onmouseout="this.src='img/svg/github1.svg'" />
         </div>
         <div class="face back">
@@ -358,7 +359,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/hardware1.svg" alt="card animado Hardware"
+          <img class="skill-icon" src="img/svg/hardware1.svg" alt="card animado Hardware"
             onmouseover="this.src='img/svg/hardware.svg'" onmouseout="this.src='img/svg/hardware1.svg'" />
         </div>
         <div class="face back">
@@ -374,7 +375,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/pc1.svg" alt="card animado Computador"
+          <img class="skill-icon" src="img/svg/pc1.svg" alt="card animado Computador"
             onmouseover="this.src='img/svg/pc.svg'" onmouseout="this.src='img/svg/pc1.svg'" />
         </div>
         <div class="face back">
@@ -390,7 +391,7 @@
 
       <div class="skillbox flip">
         <div class="face front">
-          <img class="icones-habilidades" src="img/svg/photoshop1.svg" alt="card animado Photoshop"
+          <img class="skill-icon" src="img/svg/photoshop1.svg" alt="card animado Photoshop"
             onmouseover="this.src='img/svg/photoshop.svg'" onmouseout="this.src='img/svg/photoshop1.svg'" />
         </div>
         <div class="face back">
@@ -414,75 +415,75 @@
         <div class="img-card um">
           <img src="img/svg/work.svg" alt="ícone trabalhos realizados" />
         </div>
-        <div class="valores dois">
+        <div class="values dois">
           <h2>3</h2>
         </div>
-        <div class="valores tres">
+        <div class="values tres">
           <p>TRABALHOS REALIZADOS</p>
         </div>
       </div>
-      <div class="linha quatro"></div>
+      <div class="line quatro"></div>
 
       <div class="info-card">
         <div class="img-card um">
           <img src="img/svg/code.svg" alt="ícone linhas de código" />
         </div>
-        <div class="valores dois">
+        <div class="values dois">
           <h2>3000</h2>
         </div>
-        <div class="valores tres">
+        <div class="values tres">
           <p>LINHAS DE CÓDIGO</p>
         </div>
       </div>
-      <div class="linha quatro"></div>
+      <div class="line quatro"></div>
 
       <div class="info-card">
         <div class="img-card um">
           <img src="img/svg/projetos.svg" alt="ícone projetos concluídos" />
         </div>
-        <div class="valores dois">
+        <div class="values dois">
           <h2>2</h2>
         </div>
-        <div class="valores tres">
+        <div class="values tres">
           <p>PROJETOS CONCLUÍDOS</p>
         </div>
       </div>
-      <div class="linha quatro"></div>
+      <div class="line quatro"></div>
 
       <div class="info-card">
         <div class="img-card um">
           <img src="img/svg/copocafe.svg" alt="ícone copos de café" />
         </div>
-        <div class="valores dois">
+        <div class="values dois">
           <h2>100</h2>
         </div>
-        <div class="valores tres">
+        <div class="values tres">
           <p>COPOS DE CAFÉ</p>
         </div>
       </div>
-      <div class="linha quatro"></div>
-
-      <div class="info-card">
-        <div class="img-card um ">
-          <img src="img/svg/certificado.svg" alt="ícone certificados emitidos" />
-        </div>
-        <div class="valores dois">
-          <h2>6</h2>
-        </div>
-        <div class="valores tres">
-          <p>CERTIFICADOS EMITIDOS</p>
-        </div>
-      </div>
-      <div class="linha quatro"></div>
+      <div class="line quatro"></div>
 
       <div class="info-card">
         <div class="img-card um">
+          <img src="img/svg/certificado.svg" alt="ícone certificados emitidos" />
+        </div>
+        <div class="values dois">
+          <h2>6</h2>
+        </div>
+        <div class="values tres">
+          <p>CERTIFICADOS EMITIDOS</p>
+        </div>
+      </div>
+      <div class="line quatro"></div>
+
+      <div class="info-card">
+        <div class="img-card one">
           <img src="img/svg/relogio.svg" alt="ícone horas investidas" />
         </div>
-        <div class="valores dois">
+        <div class="values dois">
           <h2>2000</h2>
         </div>
-        <div class="valores tres">
+        <div class="values tres">
           <p>HORAS INVESTIDAS</p>
         </div>
 
@@ -492,8 +493,8 @@
 
   </section>
 
-  <!-- Contato -->
-  <section id="contato">
+  <!-- contact -->
+  <section id="contact">
 
     <div class="tittles">
       <h1>Contato</h1>
@@ -504,11 +505,9 @@
 
     <div class="align">
 
-
-
       <div class="info">
         <div class="img-info">
-          <a href="https://wa.me/5588997328109" target="_blank"><img class="um" src="img/svg/wpp.svg"
+          <a href="https://wa.me/5588997328109" target="_blank"><img class="one" src="img/svg/wpp.svg"
               alt="ícone whatsapp" onmouseover="this.src='img/svg/wppazul.svg'"
               onmouseout="this.src='img/svg/wpp.svg'" /></a>
         </div>
@@ -522,7 +521,7 @@
 
       <div class="info">
         <div class="img-info">
-          <a href="https://jarlesdev@outlook.com" target="_blank"><img class="um" src="img/svg/email.svg"
+          <a href="https://jarlesdev@outlook.com" target="_blank"><img class="one" src="img/svg/email.svg"
               alt="icone email" onmouseover="this.src='img/svg/email1.svg'"
               onmouseout="this.src='img/svg/email.svg'" /></a>
         </div>
@@ -534,10 +533,9 @@
         </div>
       </div>
 
-
       <div class="info">
         <div class="img-info">
-          <img class="um" src="img/svg/discord.svg" alt="ícone discord" onmouseover="this.src='img/svg/discord1.svg'"
+          <img class="one" src="img/svg/discord.svg" alt="ícone discord" onmouseover="this.src='img/svg/discord1.svg'"
             onmouseout="this.src='img/svg/discord.svg'" />
         </div>
         <div class="acc dois">
@@ -547,10 +545,6 @@
           <p>jarles#8431</p>
         </div>
       </div>
-
-
-
-
 
     </div>
 
@@ -565,7 +559,7 @@
           <img href="index.html" src="img/JSlogo.webp" alt="logomarca do desenvolvedor desse site, jarles" /></a>
       </div>
 
-      <div id="linha-vertical"></div>
+      <div id="vertical-line"></div>
 
       <div>
         <h2>Onde me encontrar?</h2>
@@ -602,11 +596,11 @@
 
   <!-- Scripts do site-->
   <script src="js/scrollreveal.js"></script>
-  <script src="js/botaosee.js"></script>
+  <script src="js/buttonsee.js"></script>
   <script src="js/menumobile.js"></script>
   <script src="js/typewriter.js"></script>
   <script src="js/flip.js"></script>
-  <script src="js/botaotop.js"></script>
+  <script src="js/buttontop.js"></script>
 
   </body>
 

@@ -1,11 +1,11 @@
-.alinhar {
+.allign {
   width: 90%;
   display: flex;
   margin: auto;
   gap: 70px;
 }
 
-.conteudo {
+.content {
   max-width: 80rem;
   display: flex;
   margin: auto;
@@ -30,24 +30,24 @@ blockquote {
   padding-top: 64px;
 }
 
-.paragrafo {
+.paragraph-text {
   padding-top: 55px;
 }
 
-.paragrafo p {
+.paragraph-text p {
   font-size: 1.3rem;
   text-indent: 2em;
 }
 
-.titulo {
+.title {
   text-align: center;
   padding-top: 64px;
 }
-.titulo h1 {
+.title h1 {
   font-size: 3rem;
 }
 
-.botao-sobremim button {
+.curriculum button {
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
@@ -60,19 +60,19 @@ blockquote {
   font-weight: bold;
 }
 
-.botao-sobremim {
+.curriculum {
   padding-top: 4rem;
   padding-bottom: 3.5rem;
   text-align: center;
 }
 
-.botao-sobremim button:hover {
+.curriculum button:hover {
   background: rgb(145, 145, 145);
   border: 0.1rem solid rgb(0, 0, 0);
 }
 
 @media (max-width: 1120px) {
-  .alinhar {
+  .allign {
     display: grid;
     justify-content: space-between;
     margin: auto;
@@ -83,20 +83,20 @@ blockquote {
     height: initial;
     margin: auto;
   }
-  .paragrafo {
+  .paragraph-text {
     text-align: center;
     margin: auto;
     padding-top: 1rem;
   }
 
-  .paragrafo p {
+  .paragraph-text p {
     font-size: 1.7rem;
     text-indent: 0;
   }
 }
 
 @media (max-width: 720px) {
-  .paragrafo p {
+  .paragraph-text p {
     width: 90%;
     display: flex;
     margin: auto;

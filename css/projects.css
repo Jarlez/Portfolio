@@ -1,4 +1,4 @@
-#projetos {
+#projects {
   background-color: rgb(6, 6, 6);
 }
 
@@ -8,27 +8,35 @@
   transition: 1s;
 }
 
-#projetos.ativo #hiddens {
+#projects.ativo #hiddens {
   height: 22rem;
   visibility: visible;
   transition: 1s;
 }
 
-.alinhar-card {
+.allign-card {
   justify-content: center;
   display: flex;
   padding-top: 3rem;
   gap: 3rem;
 }
 
-.card-projeto {
+.project-card {
   background-color: rgb(255, 255, 255);
   height: 20rem;
   width: 17rem;
   box-shadow: 0.5rem 0.5rem rgb(145, 145, 145);
 }
 
-.producao {
+.project-card img {
+  width: 90%;
+  height: 10rem;
+  display: flex;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.production {
   background-color: rgb(0, 0, 0);
   width: 90%;
   height: 10rem;
@@ -37,35 +45,27 @@
   margin-top: 1rem;
 }
 
-.faixa {
+.range {
   margin: auto;
 }
 
-.faixa h3 {
+.range h3 {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 255, 255);
 }
 
-.card-projeto img {
-  width: 90%;
-  height: 10rem;
-  display: flex;
-  margin: auto;
-  padding-top: 1rem;
-}
-
-.textoimg {
+.text-img {
   text-align: center;
   padding-top: 1.5rem;
 }
 
-.textoimg h2 {
+.text-img h2 {
   font-size: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
-.botao-projeto button {
+.project-button button {
   color: rgb(250, 250, 250);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
@@ -76,32 +76,32 @@
   font-weight: bold;
 }
 
-.botao-projeto {
+.project-button {
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
-.botao-projeto button:hover {
+.project-button button:hover {
   background: rgb(145, 145, 145);
   border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
   transition: 2s;
 }
 
-.botao-vermais img {
+.more-button img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.botao-vermais button {
+.more-button button {
   background-color: rgb(6, 06, 06);
   cursor: pointer;
   outline: none;
   border: none;
 }
 
-.botao-vermais {
+.more-button {
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -126,41 +126,41 @@
 }
 
 @media (max-width: 1000px) {
-  .alinhar-card {
+  .allign-card {
     gap: 2rem;
   }
 
-  .textoimg h2 {
+  .text-img h2 {
     font-size: 1.2rem;
   }
 
-  #projetos.ativo #hiddens {
+  #projects.ativo #hiddens {
     padding-top: 2rem;
   }
-  .card-projeto {
+  .project-card {
     height: 20rem;
     width: 25%;
   }
 }
 
 @media (max-width: 900px) {
-  #projetos.ativo #hiddens {
+  #projects.ativo #hiddens {
     padding-top: 4rem;
     height: 1100px;
   }
 
-  .alinhar-card {
+  .allign-card {
     display: grid;
     grid-template-columns: auto;
     gap: 4rem;
   }
 
-  .card-projeto {
+  .project-card {
     height: 20rem;
     width: 17rem;
   }
 
-  .botao-vermais {
+  .more-button {
     padding-top: 3rem;
   }
 }

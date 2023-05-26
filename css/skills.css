@@ -16,20 +16,20 @@
   height: 2.5rem;
 }
 
-.valores p {
+.values p {
   letter-spacing: 1px;
   padding-top: 0.5rem;
   font-size: 0.8rem;
   color: rgb(0, 255, 255);
 }
 
-.valores h2 {
+.values h2 {
   font-size: 1.5rem;
   padding-top: 0.5rem;
   color: rgb(255, 255, 255);
 }
 
-.linha {
+.line {
   width: 1px;
   height: 7.5rem;
   border-right: 1px solid rgb(145, 145, 145);
@@ -41,7 +41,7 @@
     margin-left: 1.9rem;
   }
 
-  .linha:nth-child(6) {
+  .line:nth-child(6) {
     border-right: 1px solid rgb(0, 0, 0);
   }
 }
@@ -51,15 +51,15 @@
     grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem;
     margin-left: 2.5rem;
   }
-  .linha:nth-child(6) {
+  .line:nth-child(6) {
     border-right: 1px solid rgb(145, 145, 145);
   }
 
-  .linha:nth-child(4) {
+  .line:nth-child(4) {
     border-right: 1px solid rgb(0, 0, 0);
   }
 
-  .linha:nth-child(8) {
+  .line:nth-child(8) {
     border-right: 1px solid rgb(0, 0, 0);
   }
 }
@@ -72,7 +72,7 @@
     margin-left: initial;
   }
 
-  .linha {
+  .line {
     display: none;
   }
 }

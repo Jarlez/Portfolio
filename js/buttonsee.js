@@ -11,7 +11,7 @@ function trocar() {
 const btnShow = document.getElementById('troca')
 
 function toggleMenu() {
-    const show = document.querySelector('#projetos')
+    const show = document.querySelector('#projects')
     show.classList.toggle('ativo')
 }
 
