@@ -1,16 +1,16 @@
-.texts {
+.professionalTitle {
   float: right;
   padding: 7rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
-.texts h1 {
+.professionalTitle h1 {
   font-size: 3rem;
   color: rgb(255, 255, 255);
   text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
 }
 
-.texts h2 {
+.professionalTitle h2 {
   font-size: 1.5rem;
   padding-top: 2.5rem;
   color: rgb(0, 0, 0);
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 690px) {
-  .texts {
+  .professionalTitle {
     float: initial;
     padding: initial;
     display: flex;
@@ -43,7 +43,7 @@
     align-items: center;
   }
 
-  .texts h1 {
+  .professionalTitle h1 {
     padding-top: 5rem;
   }
 
@@ -53,12 +53,12 @@
 }
 
 @media (max-width: 430px) {
-  .texts h1 {
+  .professionalTitle h1 {
     font-size: 2.5rem;
     padding-top: 3rem;
   }
 
-  .texts h2 {
+  .professionalTitle h2 {
     font-size: 1.3rem;
   }
 
@@ -68,11 +68,11 @@
 }
 
 @media (max-width: 360px) {
-  .texts h1 {
+  .professionalTitle h1 {
     font-size: 2rem;
   }
 
-  .texts h2 {
+  .professionalTitle h2 {
     font-size: 1rem;
     padding-top: 2rem;
   }

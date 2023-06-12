@@ -2,33 +2,33 @@
   background-color: rgb(6, 6, 6);
 }
 
-#hiddens {
+#projectHidden {
   height: 0;
   overflow: hidden;
   transition: 1s;
 }
 
-#projects.ativo #hiddens {
+#projects.ativo #projectHidden {
   height: 22rem;
   visibility: visible;
   transition: 1s;
 }
 
-.allign-card {
+.allignCardProject {
   justify-content: center;
   display: flex;
   padding-top: 3rem;
   gap: 3rem;
 }
 
-.project-card {
+.projectCard {
   background-color: rgb(255, 255, 255);
   height: 20rem;
   width: 17rem;
   box-shadow: 0.5rem 0.5rem rgb(145, 145, 145);
 }
 
-.project-card img {
+.projectCard img {
   width: 90%;
   height: 10rem;
   display: flex;
@@ -54,18 +54,18 @@
   color: rgb(255, 255, 255);
 }
 
-.text-img {
+.projectSubtitle {
   text-align: center;
   padding-top: 1.5rem;
 }
 
-.text-img h2 {
+.projectSubtitle h2 {
   font-size: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
-.project-button button {
+.projectButton button {
   color: rgb(250, 250, 250);
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
@@ -76,91 +76,91 @@
   font-weight: bold;
 }
 
-.project-button {
+.projectButton {
   padding-top: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
-.project-button button:hover {
+.projectButton button:hover {
   background: rgb(145, 145, 145);
   border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
   transition: 2s;
 }
 
-.more-button img {
+.projectMoreButton img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.more-button button {
+.projectMoreButton button {
   background-color: rgb(6, 06, 06);
   cursor: pointer;
   outline: none;
   border: none;
 }
 
-.more-button {
+.projectMoreButton {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 
-.githublink {
+.githubLink {
   padding: 2.5rem 2.5rem;
   text-align: center;
 }
 
-.githublink a {
+.githubLink a {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.githublink a:hover {
+.githubLink a:hover {
   color: rgb(0, 255, 255);
   transition-duration: 1s;
   transition-property: all;
 }
 
 @media (max-width: 1000px) {
-  .allign-card {
+  .allignCardProject {
     gap: 2rem;
   }
 
-  .text-img h2 {
+  .projectSubtitle h2 {
     font-size: 1.2rem;
   }
 
-  #projects.ativo #hiddens {
+  #projects.ativo #projectHidden {
     padding-top: 2rem;
   }
-  .project-card {
+  .projectCard {
     height: 20rem;
     width: 25%;
   }
 }
 
 @media (max-width: 900px) {
-  #projects.ativo #hiddens {
+  #projects.ativo #projectHidden {
     padding-top: 4rem;
     height: 1100px;
   }
 
-  .allign-card {
+  .allignCardProject {
     display: grid;
     grid-template-columns: auto;
     gap: 4rem;
   }
 
-  .project-card {
+  .projectCard {
     height: 20rem;
     width: 17rem;
   }
 
-  .more-button {
+  .projectMoreButton {
     padding-top: 3rem;
   }
 }

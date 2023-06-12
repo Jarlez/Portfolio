@@ -1,4 +1,4 @@
-const toTop = document.querySelector(".link-top");
+const toTop = document.querySelector(".buttonTop");
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 600) {

@@ -1,17 +1,14 @@
-.allign {
+.allignAboutMe {
   width: 90%;
   display: flex;
   margin: auto;
   gap: 70px;
-}
-
-.content {
   max-width: 80rem;
   display: flex;
   margin: auto;
 }
 
-.bloco-img img {
+.aboutMeImage img {
   width: 450px;
   height: 310px;
   display: flex;
@@ -26,24 +23,24 @@ blockquote {
   font-size: 1.3rem;
 }
 
-.bloco-img {
+.aboutMeImage {
   padding-top: 64px;
 }
 
-.paragraph-text {
+.aboutMeText {
   padding-top: 55px;
 }
 
-.paragraph-text p {
+.aboutMeText p {
   font-size: 1.3rem;
   text-indent: 2em;
 }
 
-.title {
+.titleAboutMe {
   text-align: center;
   padding-top: 64px;
 }
-.title h1 {
+.titleAboutMe h1 {
   font-size: 3rem;
 }
 
@@ -72,31 +69,31 @@ blockquote {
 }
 
 @media (max-width: 1120px) {
-  .allign {
+  .allignAboutMe {
     display: grid;
     justify-content: space-between;
     margin: auto;
   }
 
-  .bloco-img img {
+  .aboutMeImage img {
     width: 80%;
     height: initial;
     margin: auto;
   }
-  .paragraph-text {
+  .aboutMeText {
     text-align: center;
     margin: auto;
     padding-top: 1rem;
   }
 
-  .paragraph-text p {
+  .aboutMeText p {
     font-size: 1.7rem;
     text-indent: 0;
   }
 }
 
 @media (max-width: 720px) {
-  .paragraph-text p {
+  .aboutMeText p {
     width: 90%;
     display: flex;
     margin: auto;

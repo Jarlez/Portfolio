@@ -2,7 +2,7 @@
   background-color: rgb(6, 6, 6);
 }
 
-.container-skills {
+.abilityContainer {
   padding-top: 4rem;
   display: grid;
   grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
@@ -11,12 +11,12 @@
   padding-bottom: 4rem;
 }
 
-.skillbox img {
+.abilityBox img {
   width: 6.5rem;
   height: 6.5rem;
 }
 
-.skillbox {
+.abilityBox {
   width: 8.5rem;
   height: 8.5rem;
   background-color: rgb(255, 255, 255);
@@ -65,13 +65,13 @@
 }
 
 @media (max-width: 950px) {
-  .container-skills {
+  .abilityContainer {
     gap: 1.5rem;
   }
 }
 
 @media (max-width: 800px) {
-  .container-skills {
+  .abilityContainer {
     gap: 2rem;
     display: grid;
     grid-template-columns: 8rem 8rem;
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 400px) {
-  .container-skills {
+  .abilityContainer {
     grid-template-columns: 8rem;
   }
 }

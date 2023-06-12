@@ -2,7 +2,7 @@
   background-color: rgb(6, 6, 6);
 }
 
-.align {
+.contactAlign {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
@@ -15,19 +15,19 @@
   width: 9.5rem;
 }
 
-.img-info img {
+.contactImage img {
   height: 2.5rem;
   width: 3rem;
   cursor: pointer;
 }
 
-.acc h2 {
+.contactInfo h2 {
   padding-top: 1.5rem;
   font-size: 1rem;
   color: rgb(0, 255, 255);
 }
 
-.acc p {
+.contactInfo p {
   padding-top: 0.5rem;
   font-size: 1rem;
   color: rgb(255, 255, 255);
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 650px) {
-  .align {
+  .contactAlign {
     flex-direction: column;
     padding: 1.5rem;
   }

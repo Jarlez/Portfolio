@@ -1,9 +1,25 @@
+@import url("./ability.css");
+@import url("./aboutMe.css");
+@import url("./contact.css");
+@import url("./home.css");
+@import url("./navbar.css");
+@import url("./projects.css");
+@import url("./skills.css");
+
+:root {
+  --azul: rgb(0, 255, 255);
+  --branco: rgb(255, 255, 255);
+  --amarelo: rgb(255, 174, 29);
+  --cinza: rgb(60, 60, 60);
+  --preto: rgb(0, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.background-image {
+.backgroundImage {
   background-image: url(../img/workspace.webp);
   height: 40rem;
   background-attachment: fixed;
@@ -22,22 +38,22 @@ h2 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.tittles h1 {
+.title h1 {
   font-size: 3rem;
   text-align: center;
-  color: rgb(0, 255, 255);
+  color: var(--azul);
   padding-top: 64px;
 }
 
-.tittles p {
+.title p {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 32px;
-  color: rgb(255, 255, 255);
+  color: var(--branco);
 }
 
-.link-top {
-  background-color: rgb(0, 255, 255);
+.buttonTop {
+  background-color: var(--azul);
   position: fixed;
   right: 2px;
   bottom: 2px;
@@ -45,15 +61,15 @@ h2 {
   height: 20px;
   display: flex;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--branco);
   padding: 13px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s;
-  box-shadow: 4px 4px 12px rgb(60, 60, 60);
+  box-shadow: 4px 4px 12px var(--cinza);
 }
 
-.link-top.ativado {
+.buttonTop.ativado {
   bottom: 2px;
   pointer-events: auto;
   opacity: 1;

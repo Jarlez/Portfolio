@@ -12,25 +12,25 @@
 
   <!-- Nome e imagem da guia -->
   <title>Portfólio | Jarles Sayhare</title>
-  <link rel="icon" href="img/jarlesfavicone.png" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="img/jarlesfavicone.png" type="image/x-icon">
+  <link rel="icon" href="img/jarlesfavicone.png"/>
+  <link rel="apple-touch-icon" href="img/jarlesfavicone.png">
 
   <!-- Efeito Scrollreveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- Preloads  -->
-  <link rel="preload" href="css/site.css" as="style">
+  <link rel="preload" href="css/all.css" as="style">
   <link rel="preload" href="css/navbar.css" as="style">
   <link rel="preload" href="js/typewriter.js" as="script">
   <link rel="preload" href="js/menumobile.js" as="script">
   <link rel="preload" href="./img/workspace.webp" as="image">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/projects.css" />
-  <link rel="stylesheet" href="css/about_me.css">
+  <link rel="stylesheet" href="css/aboutMe.css">
   <link rel="stylesheet" href="css/ability.css">
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/contact.css">
@@ -41,44 +41,48 @@
 <body">
 
   <!-- NavBar -->
-  <nav id="nav">
 
-    <div class="container">
+  <header id="nav">
+
+    <div class="logoNav">
       <a href="index.html" target="_self" class="img-left">
         <img src="img/JSlogo.webp" alt="logomarca do desenvolvedor desse site" />
       </a>
-      <button id="btn-mobile">&#9776;</button>
-      <div id="menu">
-        <ul class="navbar-nav">
-          <li><a href="#home" class="nav-link">Início</a></li>
-          <li><a href="#projects" class="nav-link">Projetos</a></li>
-          <li><a href="#about-me" class="nav-link">Sobre mim</a></li>
-          <li><a href="#ability" class="nav-link">Habilidades</a></li>
-          <li><a href="#contact" class="nav-link">Contatos</a></li>
-        </ul>
-
-        <div class="social-icons">
-          <a href="https://github.com/Jarlez" target="_blank"><img alt="icone do github" src="img/github.webp"
-              onmouseover="this.src='img/githubinvertido.png'" onmouseout="this.src='img/github.webp'" /></a>
-          <a href="https://www.linkedin.com/in/jarlessayhare7/" target="_blank"><img alt="icone do linkedin"
-              src="img/linkedin.webp" onmouseover="this.src='img/linkedinazul.png'"
-              onmouseout="this.src='img/linkedin.webp'" /></a>
-        </div>
-      </div>
     </div>
 
-  </nav>
+    <button id="btnMobile">&#9776;</button>
+
+    <nav id="menu">
+      <ul class="navbarNav">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#aboutMe">Sobre mim</a></li>
+        <li><a href="#ability">Habilidades</a></li>
+        <li><a href="#contact">Contatos</a></li>
+      </ul>
+
+      <div class="socialIcons">
+        <a href="https://github.com/Jarlez" target="_blank"><img alt="icone do github" src="img/github.webp"
+            onmouseover="this.src='img/githubinvertido.png'" onmouseout="this.src='img/github.webp'" /></a>
+        <a href="https://www.linkedin.com/in/jarlessayhare7/" target="_blank"><img alt="icone do linkedin"
+            src="img/linkedin.webp" onmouseover="this.src='img/linkedinazul.png'"
+            onmouseout="this.src='img/linkedin.webp'" /></a>
+      </div>
+
+    </nav>
+
+  </header>
 
   <!-- Botão voltar ao topo -->
-  <a href="#nav" class="link-top">&#9650</a>
+  <a href="#nav" class="buttonTop">&#9650</a>
 
   <!-- Inicio -->
   <section id="home">
 
-    <div class="background-image">
+    <div class="backgroundImage">
 
-      <div class="texts">
-        <h1>JARLES SAYHARE</strong></h1>
+      <div class="professionalTitle">
+        <h1>JARLES SAYHARE</h1>
         <h2>DESENVOLVEDOR FRONT-END</h2>
         <h2>DESIGNER GRÁFICO</h2>
         <h2>EDITOR DE VÍDEO</h2>
@@ -92,170 +96,166 @@
 
   <!-- Projetos -->
   <section id="projects">
-    <div>
-      <div class="tittles">
-        <h1>Projetos</h1>
-        <p>Alguns dos meus projetos já finalizados</p>
-      </div>
 
-      <div class="allign-card um">
-
-        <div class="project-card">
-          <div class="img-project">
-            <img src="img/ContadordeNumeros.webp" alt="imagem projeto" loading=“lazy” />
-          </div>
-          <div class="text-img">
-            <h2>Contador de números</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="img-project">
-            <img src="img/CalculadoraBasica.webp" alt="imagem projeto" loading=“lazy” />
-          </div>
-          <div class="text-img">
-            <h2>Calculadora básica</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="img-project">
-            <img src="img/Horário.webp" alt="imagem projeto" loading=“lazy” />
-          </div>
-          <div class="text-img">
-            <h2>Hora do dia</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="allign-card" id="hiddens">
-
-        <div class="project-card">
-          <div class="img-project production">
-            <div class="range">
-              <h3>EM PRODUÇÃO</h3>
-            </div>
-          </div>
-          <div class="text-img">
-            <h2>Calculadora</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/Calculadora" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="img-project production">
-            <div class="range">
-              <h3>EM PRODUÇÃO</h3>
-            </div>
-          </div>
-          <div class="text-img">
-            <h2>Jogo da velha</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/Jogo-da-velha-" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="img-project production">
-            <div class="range">
-              <h3>EM PRODUÇÃO</h3>
-            </div>
-          </div>
-          <div class="text-img">
-            <h2>Calendário</h2>
-          </div>
-          <div class="project-button">
-            <a href="https://github.com/Jarlez/Calendario" target="_blank"><button>Ver mais</button></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="more-button">
-        <button class="btn-see">
-          <img id="troca" alt="botão expandir e retrair" src="img/vermais.webp" onclick="trocar()">
-        </button>
-      </div>
-
-      <div class="githublink">
-        <a href="https://github.com/Jarlez?tab=repositories" target="_blank">Repositórios no GitHub</a>
-      </div>
+    <div class="title">
+      <h1>Projetos</h1>
+      <p>Alguns dos meus projetos já finalizados</p>
     </div>
+
+    <div class="allignCardProject um">
+
+      <div class="projectCard">
+        <div class="projectImage">
+          <img src="img/ContadordeNumeros.webp" alt="imagem projeto" loading="lazy" />
+        </div>
+        <div class="projectSubtitle">
+          <h2>Contador de números</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+      <div class="projectCard">
+        <div class="projectImage">
+          <img src="img/CalculadoraBasica.webp" alt="imagem projeto" loading=“lazy” />
+        </div>
+        <div class="projectSubtitle">
+          <h2>Calculadora básica</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+      <div class="projectCard">
+        <div class="projectImage">
+          <img src="img/Horário.webp" alt="imagem projeto" loading=“lazy” />
+        </div>
+        <div class="projectSubtitle">
+          <h2>Hora do dia</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/JavaScript-estudos" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="allignCardProject" id="projectHidden">
+
+      <div class="projectCard">
+        <div class="projectImage production">
+          <div class="range">
+            <h3>EM PRODUÇÃO</h3>
+          </div>
+        </div>
+        <div class="projectSubtitle">
+          <h2>Calculadora</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/Calculadora" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+      <div class="projectCard">
+        <div class="projectImage production">
+          <div class="range">
+            <h3>EM PRODUÇÃO</h3>
+          </div>
+        </div>
+        <div class="projectSubtitle">
+          <h2>Jogo da velha</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/Jogo-da-velha-" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+      <div class="projectCard">
+        <div class="projectImage production">
+          <div class="range">
+            <h3>EM PRODUÇÃO</h3>
+          </div>
+        </div>
+        <div class="projectSubtitle">
+          <h2>Calendário</h2>
+        </div>
+        <div class="projectButton">
+          <a href="https://github.com/Jarlez/Calendario" target="_blank"><button>Ver mais</button></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projectMoreButton">
+      <button>
+        <img id="replaceButton" alt="botão expandir e retrair" src="img/vermais.webp" onclick="replace()">
+      </button>
+    </div>
+
+    <div class="githubLink">
+      <a href="https://github.com/Jarlez?tab=repositories" target="_blank">Repositórios no GitHub</a>
+    </div>
+
   </section>
 
   <!-- Sobre mim-->
-  <section id="about-me">
-    <div class="content">
+  <section id="aboutMe">
 
-      <div>
-        <div class="title">
-          <h1>Sobre mim</h1>
-        </div>
-        <div class="allign um">
-          <div class="bloco-img ">
-            <img src="img/profile.webp" alt="imagem sobre mim" loading=“lazy”>
-          </div>
+    <div class="titleAboutMe">
+      <h1>Sobre mim</h1>
 
-          <div class="paragraph-text">
-            <p>
-              Meu nome é Jarles Sayhare, sou desenvolvedor WEB Front-end junior
-              e um entusiasta por tecnologia. Gosto muito de programar,
-              desenvolver, criar, resolver problemas, inventar e reinventar.
-              Procuro sempre estar estudando e aprendendo novas práticas
-              para melhorar na minha área de atuação, e no tempo livre vou
-              atrás de conhecer e explorar esse gigantesco mundo da tecnologia.
-              Gosto bastante de programar em JavaScript e escrever
-              em HTML e CSS. Minha meta é ser melhor que eu mesmo
-              todos os dias como desenvolvedor.
-            </p>
-            <blockquote>"Na vida, nada é impossível. É só lutar dia a dia pelos seus sonhos" - Cristiano Ronaldo
-            </blockquote>
-          </div>
+      <div class="allignAboutMe um">
+
+        <div class="aboutMeImage ">
+          <img src="img/profile.webp" alt="imagem sobre mim" loading=“lazy”>
         </div>
+
+        <div class="aboutMeText">
+          <p>
+            Meu nome é Jarles Sayhare, sou desenvolvedor WEB Front-end junior
+            e um entusiasta por tecnologia. Gosto muito de programar,
+            desenvolver, criar, resolver problemas, inventar e reinventar.
+            Procuro sempre estar estudando e aprendendo novas práticas
+            para melhorar na minha área de atuação, e no tempo livre vou
+            atrás de conhecer e explorar esse gigantesco mundo da tecnologia.
+            Gosto bastante de programar em JavaScript e escrever
+            em HTML e CSS. Minha meta é ser melhor que eu mesmo
+            todos os dias como desenvolvedor.
+          </p>
+          <blockquote>"Na vida, nada é impossível. É só lutar dia a dia pelos seus sonhos" - Cristiano Ronaldo
+          </blockquote>
+        </div>
+
       </div>
+
     </div>
 
-<<<<<<< HEAD
     <div class="curriculum">
-      <a href="download/Curriculo_Jarles_Sayhare.pdf" title="baixar currículo" target="_blank"
-=======
-    <div class="botao-sobremim um">
-      <a href="download/Jarles_Sayhare_Currículo.pdf" title="baixar currículo" target="_blank"
->>>>>>> 26cb3874bbd249010e6c75589362d05638a74020
+      <a href="download/jarles-curriculo.pdf" title="baixar currículo" target="_blank"
         type="application/pdf"><button>Currículo</button></a>
     </div>
 
   </section>
 
-  <!-- Habilidades -->
+  <!-- Habilidades-->
   <section id="ability">
 
-    <div class="tittles">
+    <div class="title">
       <h1>Habilidades</h1>
     </div>
-    <div class="tittles">
+
+    <div class="title">
       <p>Clique nos cards abaixo para mais informações</p>
     </div>
 
-    <div class="container-skills dois">
+    <div class="abilityContainer dois">
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" alt="card animado HTML5" src="img/svg/html1.svg"
-            onmouseover="this.src='img/svg/html.svg'" onmouseout="this.src='img/svg/html1.svg'" />
+          <img alt="card animado HTML5" src="img/svg/html1.svg" onmouseover="this.src='img/svg/html.svg'"
+            onmouseout="this.src='img/svg/html1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -268,10 +268,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" alt="card animado CSS3" src="img/svg/css31.svg"
-            onmouseover="this.src='img/svg/css3.svg'" onmouseout="this.src='img/svg/css31.svg'" />
+          <img alt="card animado CSS3" src="img/svg/css31.svg" onmouseover="this.src='img/svg/css3.svg'"
+            onmouseout="this.src='img/svg/css31.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -284,7 +284,7 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
           <img class="iconeshabilidades" src="img/svg/js1.svg" alt="card animado JavaScript"
             onmouseover="this.src='img/svg/js.svg'" onmouseout="this.src='img/svg/js1.svg'" />
@@ -299,10 +299,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/reactjs1.svg" alt="card animado React.js"
-            onmouseover="this.src='img/svg/reactjs.svg'" onmouseout="this.src='img/svg/reactjs1.svg'" />
+          <img src="img/svg/reactjs1.svg" alt="card animado React.js" onmouseover="this.src='img/svg/reactjs.svg'"
+            onmouseout="this.src='img/svg/reactjs1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -315,10 +315,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/filmora1.svg" alt="card animado Filmora"
-            onmouseover="this.src='img/svg/filmora.svg'" onmouseout="this.src='img/svg/filmora1.svg'" />
+          <img src="img/svg/filmora1.svg" alt="card animado Filmora" onmouseover="this.src='img/svg/filmora.svg'"
+            onmouseout="this.src='img/svg/filmora1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -331,9 +331,9 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/git1.svg" alt="card animado GIT" onmouseover="this.src='img/svg/git.svg'"
+          <img src="img/svg/git1.svg" alt="card animado GIT" onmouseover="this.src='img/svg/git.svg'"
             onmouseout="this.src='img/svg/git1.svg'" />
         </div>
         <div class="face back">
@@ -347,10 +347,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/github1.svg" alt="card animado GITHUB"
-            onmouseover="this.src='img/svg/github.svg'" onmouseout="this.src='img/svg/github1.svg'" />
+          <img src="img/svg/github1.svg" alt="card animado GITHUB" onmouseover="this.src='img/svg/github.svg'"
+            onmouseout="this.src='img/svg/github1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -362,10 +362,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/hardware1.svg" alt="card animado Hardware"
-            onmouseover="this.src='img/svg/hardware.svg'" onmouseout="this.src='img/svg/hardware1.svg'" />
+          <img src="img/svg/hardware1.svg" alt="card animado Hardware" onmouseover="this.src='img/svg/hardware.svg'"
+            onmouseout="this.src='img/svg/hardware1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -378,10 +378,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/pc1.svg" alt="card animado Computador"
-            onmouseover="this.src='img/svg/pc.svg'" onmouseout="this.src='img/svg/pc1.svg'" />
+          <img src="img/svg/pc1.svg" alt="card animado Computador" onmouseover="this.src='img/svg/pc.svg'"
+            onmouseout="this.src='img/svg/pc1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -394,10 +394,10 @@
         </div>
       </div>
 
-      <div class="skillbox flip">
+      <div class="abilityBox flip">
         <div class="face front">
-          <img class="skill-icon" src="img/svg/photoshop1.svg" alt="card animado Photoshop"
-            onmouseover="this.src='img/svg/photoshop.svg'" onmouseout="this.src='img/svg/photoshop1.svg'" />
+          <img src="img/svg/photoshop1.svg" alt="card animado Photoshop" onmouseover="this.src='img/svg/photoshop.svg'"
+            onmouseout="this.src='img/svg/photoshop1.svg'" />
         </div>
         <div class="face back">
           <ol class="list">
@@ -412,141 +412,137 @@
   </section>
 
   <!-- Skills -->
-  <section class="skills">
+  <section id="skills">
 
-    <div class="section-skills">
-
-      <div class="info-card">
-        <div class="img-card um">
+      <div>
+        <div class="skillCardImage um">
           <img src="img/svg/work.svg" alt="ícone trabalhos realizados" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>3</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>TRABALHOS REALIZADOS</p>
         </div>
       </div>
       <div class="line quatro"></div>
 
-      <div class="info-card">
-        <div class="img-card um">
+      <div>
+        <div class="skillCardImage um">
           <img src="img/svg/code.svg" alt="ícone linhas de código" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>3000</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>LINHAS DE CÓDIGO</p>
         </div>
       </div>
       <div class="line quatro"></div>
 
-      <div class="info-card">
-        <div class="img-card um">
+      <div>
+        <div class="skillCardImage um">
           <img src="img/svg/projetos.svg" alt="ícone projetos concluídos" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>2</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>PROJETOS CONCLUÍDOS</p>
         </div>
       </div>
       <div class="line quatro"></div>
 
-      <div class="info-card">
-        <div class="img-card um">
+      <div>
+        <div class="skillCardImage um">
           <img src="img/svg/copocafe.svg" alt="ícone copos de café" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>100</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>COPOS DE CAFÉ</p>
         </div>
       </div>
       <div class="line quatro"></div>
 
-      <div class="info-card">
-        <div class="img-card um">
+      <div>
+        <div class="skillCardImage um">
           <img src="img/svg/certificado.svg" alt="ícone certificados emitidos" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>6</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>CERTIFICADOS EMITIDOS</p>
         </div>
       </div>
       <div class="line quatro"></div>
 
-      <div class="info-card">
-        <div class="img-card one">
+      <div>
+        <div class="skillCardImage one">
           <img src="img/svg/relogio.svg" alt="ícone horas investidas" />
         </div>
-        <div class="values dois">
+        <div class="skillValue dois">
           <h2>2000</h2>
         </div>
-        <div class="values tres">
+        <div class="skillValue tres">
           <p>HORAS INVESTIDAS</p>
         </div>
 
       </div>
 
-    </div>
-
   </section>
 
-  <!-- contact -->
+  <!-- Contatos -->
   <section id="contact">
 
-    <div class="tittles">
+    <div class="title">
       <h1>Contato</h1>
     </div>
-    <div class="tittles">
+    <div class="title">
       <p>Entre em contato comigo e tire suas dúvidas</p>
     </div>
 
-    <div class="align">
+    <div class="contactAlign">
 
       <div class="info">
-        <div class="img-info">
+        <div class="contactImage">
           <a href="https://wa.me/5588997328109" target="_blank"><img class="one" src="img/svg/wpp.svg"
               alt="ícone whatsapp" onmouseover="this.src='img/svg/wppazul.svg'"
               onmouseout="this.src='img/svg/wpp.svg'" /></a>
         </div>
-        <div class="acc dois">
+        <div class="contactInfo dois">
           <h2>WHATSAPP</h2>
         </div>
-        <div class="acc tres">
+        <div class="contactInfo tres">
           <p>(88) 99732-8109</p>
         </div>
       </div>
 
       <div class="info">
-        <div class="img-info">
+        <div class="contactImage">
           <a href="https://jarlesdev@outlook.com" target="_blank"><img class="one" src="img/svg/email.svg"
               alt="icone email" onmouseover="this.src='img/svg/email1.svg'"
               onmouseout="this.src='img/svg/email.svg'" /></a>
         </div>
-        <div class="acc dois">
+        <div class="contactInfo dois">
           <h2>E-MAIL</h2>
         </div>
-        <div class="acc tres">
+        <div class="contactInfo tres">
           <p>jarlesdev@outlook.com</p>
         </div>
       </div>
 
       <div class="info">
-        <div class="img-info">
+        <div class="contactImage">
           <img class="one" src="img/svg/discord.svg" alt="ícone discord" onmouseover="this.src='img/svg/discord1.svg'"
             onmouseout="this.src='img/svg/discord.svg'" />
         </div>
-        <div class="acc dois">
+        <div class="contactInfo dois">
           <h2>DISCORD</h2>
         </div>
-        <div class="acc tres">
+        <div class="contactInfo tres">
           <p>jarles#8431</p>
         </div>
       </div>
@@ -556,7 +552,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="rodape">
+  <footer class="footer">
     <div class="top">
 
       <div class="image">
@@ -564,27 +560,27 @@
           <img href="index.html" src="img/JSlogo.webp" alt="logomarca do desenvolvedor desse site, jarles" /></a>
       </div>
 
-      <div id="vertical-line"></div>
+      <div id="verticalLine"></div>
 
       <div>
         <h2>Onde me encontrar?</h2>
-        <div class="footer-icon">
+        <div class="footerIcon">
 
-          <div class="footer-icon um">
+          <div class="footerIcon um">
             <a href="https://github.com/Jarlez" target="_blank"><img src="img/svg/github2.svg" alt="ícone github"
                 onmouseover="this.src='img/svg/githubazul.svg'" onmouseout="this.src='img/svg/github2.svg'" /></a>
           </div>
-          <div class="footer-icon dois">
+          <div class="footerIcon dois">
             <a href="https://www.linkedin.com/in/jarlessayhare7/" target="_blank"><img src="img/svg/linkedin2.svg"
                 alt="ícone linkedin" onmouseover="this.src='img/svg/linkedinazul.svg'"
                 onmouseout="this.src='img/svg/linkedin2.svg'" /></a>
           </div>
-          <div class="footer-icon tres">
+          <div class="footerIcon tres">
             <a href="https://join.skype.com/invite/ow4TWz5qUP45" target="_blank"><img src="img/svg/skype.svg"
                 alt="ícone skype" onmouseover="this.src='img/svg/skypeazul.svg'"
                 onmouseout="this.src='img/svg/skype.svg'" /></a>
           </div>
-          <div class="footer-icon quatro">
+          <div class="footerIcon quatro">
             <a href="https://www.behance.net/jarlessayhare1" target="_blank"><img src="img/svg/behance.svg"
                 alt="ícone behance" onmouseover="this.src='img/svg/behanceazul.svg'"
                 onmouseout="this.src='img/svg/behance.svg'" /></a>

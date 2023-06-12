@@ -1,8 +1,5 @@
-.skills {
+#skills {
   background-color: rgb(3, 3, 3);
-}
-
-.section-skills {
   display: grid;
   grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem;
   text-align: center;
@@ -11,19 +8,19 @@
   padding: 1.5rem 1.5rem;
 }
 
-.img-card img {
+.skillCardImage img {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.values p {
+.skillValue p {
   letter-spacing: 1px;
   padding-top: 0.5rem;
   font-size: 0.8rem;
   color: rgb(0, 255, 255);
 }
 
-.values h2 {
+.skillValue h2 {
   font-size: 1.5rem;
   padding-top: 0.5rem;
   color: rgb(255, 255, 255);
@@ -36,20 +33,21 @@
 }
 
 @media (max-width: 950px) {
-  .section-skills {
+  #skills {
     grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem;
-    margin-left: 1.9rem;
+
   }
 
   .line:nth-child(6) {
     border-right: 1px solid rgb(0, 0, 0);
+  
   }
 }
 
 @media (max-width: 600px) {
-  .section-skills {
+  #skills {
     grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem;
-    margin-left: 2.5rem;
+    
   }
   .line:nth-child(6) {
     border-right: 1px solid rgb(145, 145, 145);
@@ -65,7 +63,7 @@
 }
 
 @media (max-width: 400px) {
-  .section-skills {
+  #skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
