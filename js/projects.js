@@ -31,6 +31,7 @@ for (let i = 0; i < carousels.length; i++) {
   });
 }
 
+
 // Função para exibir o modal correspondente ao card
 function openModal(modal) {
   modal.style.display = 'block';
@@ -101,46 +102,50 @@ cards.forEach((card, index) => {
   });
 
   closeButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-    body.style.overflow = 'auto';
-   
+    closeModal(modal);
   });
 });
 
 
-// Encontra todos os elementos com a classe "projectCard"
-var projectCards = document.querySelectorAll('.projectCard');
-
-// Itera sobre cada elemento
-projectCards.forEach(function (card) {
-  // Verifica se o carrossel contém apenas uma imagem
-  var carouselImages = card.querySelectorAll('.carouselImage');
-
-  if (carouselImages.length === 1) {
-    // Remove as divs com a classe "arrow"
-    var arrows = card.querySelectorAll('.arrow');
-    arrows.forEach(function (arrow) {
-      arrow.parentNode.removeChild(arrow);
-    });
+document.addEventListener('keydown', function (event) {
+  // Verifica se a tecla pressionada é a tecla "Esc" (Escape)
+  if (event.key === 'Escape') {
+    // Fecha o modal
+    var activeModal = document.querySelector('.modal[style*="display: block"]');
+    if (activeModal) {
+      closeModal(activeModal);
+    }
   }
 });
 
-var modalIs = document.querySelectorAll('.modal');
 
-// Itera sobre cada modal
-modalIs.forEach(function (modal) {
-  // Verifica se o carrossel do modal contém apenas uma imagem
-  var carouselImages = modal.querySelectorAll('.modalCarouselImage');
+// Função para fechar o modal
+function closeModal(modal) {
+  modal.style.display = 'none';
+  body.style.overflow = 'auto';
+  mainContent.style.pointerEvents = 'auto'; // Permitir interação com a tela principal novamente
+}
 
-  if (carouselImages.length === 1) {
-    // Oculta as divs com a classe "modalCarouselArrow"
-    var arrows = modal.querySelectorAll('.modalCarouselArrow');
-    arrows.forEach(function (arrow) {
-      arrow.style.display = 'none';
-    });
-  }
+
+
+
+
+function closeModalOnClickOutside(modal) {
+  window.addEventListener('click', function (event) {
+    if (modal.style.display === 'block' && !modal.contains(event.target)) {
+      closeModal(modal);
+    }
+  });
+}
+
+// Event listener para exibir o modal ao clicar na lupa do card
+document.querySelectorAll('.zoomIcon').forEach(function (zoomIcon, index) {
+  zoomIcon.addEventListener('click', function () {
+    const modal = modals[index];
+    openModal(modal);
+    closeModalOnClickOutside(modal); // Chama a função para fechar o modal ao clicar fora da imagem
+  });
 });
-
 
 
 

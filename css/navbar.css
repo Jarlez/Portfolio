@@ -10,7 +10,6 @@
   gap: 10rem;
   transition: padding-top 0.5s ease, background-color 0.5s ease;
   z-index: 9999;
-
 }
 
 #nav.scrolled {
@@ -66,7 +65,7 @@
   }
 
   #nav.active #menu {
-    height: 32vh;
+    height: 285px;
     visibility: visible;
   }
 
