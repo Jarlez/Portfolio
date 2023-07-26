@@ -15,18 +15,14 @@
   <link rel="icon" href="img/jarlesfavicone.png" />
   <link rel="apple-touch-icon" href="img/jarlesfavicone.png">
 
-  <!-- Efeito Scrollreveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Animação -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- Preloads  -->
   <link rel="preload" href="css/all.css" as="style">
   <link rel="preload" href="css/navbar.css" as="style">
   <link rel="preload" href="js/projects.js" as="script">
   <link rel="preload" href="js/menumobile.js" as="script">
-  <link rel="preload" href="./img/workspace.webp" as="image">
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/all.css" />
@@ -895,18 +891,21 @@
   <script src="js/buttontop.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
   <script>
-    // Inicialize o AOS com a opção once: true
+    // Inicialização do AOS com a opção once: true
     AOS.init({
       once: true
     });
 
- AOS.init({
+    AOS.init({
       disable: window.innerWidth < 1024
     });
 
-    // Desabilite o AOS após a primeira execução
-    $(document).ready(function () {
-      $('[data-aos]').removeAttr('data-aos');
+    // Desabilitando o AOS após a primeira execução
+    document.addEventListener('DOMContentLoaded', function () {
+      var elementsWithAOS = document.querySelectorAll('.data-aos');
+      for (var i = 0; i < elementsWithAOS.length; i++) {
+        elementsWithAOS[i].removeAttribute('data-aos');
+      }
     });
 
   </script>

@@ -103,7 +103,7 @@ cards.forEach((card, index) => {
   closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
     body.style.overflow = 'auto';
-    mainContent.style.pointerEvents = 'auto';
+   
   });
 });
 
