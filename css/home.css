@@ -1,83 +1,92 @@
-.professionalTitle {
-  float: right;
-  padding: 7rem;
-  font-family: "Josefin Sans", sans-serif;
+#home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
 }
 
-.professionalTitle h1 {
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+.homeCentralizer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 32px;
+
 }
 
-.professionalTitle h2 {
-  font-size: 1.5rem;
-  padding-top: 2.5rem;
-  color: rgb(0, 0, 0);
+.homeDescription {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-.typewriter::after {
-  content: "|";
-  font-size: 30px;
-  margin-left: 4px;
-  opacity: 1px;
-  animation: pisca 0.7s infinite;
+.homeTitle {
+  color: var(--white);
 }
 
-@keyframes pisca {
-  0%,
-  100% {
-    opacity: 1;
+.homeTitle h1 {
+  font-size: 5rem;
+}
+
+.homeTitle h2 {
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.homeTitle h3 {
+  font-size: 1rem;
+  padding-top: 3px;
+}
+
+.homeIcons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+}
+
+.homeIcons a {
+  margin: 10px;
+}
+
+.homeIcons img {
+  width: 40px;
+}
+
+.arrowDown {
+  padding-left: 10px;
+  width: 10px;
+}
+
+.homeButton button {
+  width: 145px;
+  height: 50px;
+  color: var(--white);
+  border-color: var(--blue);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.homeButton button:hover {
+  transition-duration: 1s;
+  transition-property: all;
+  background-color: var(--blue);
+}
+
+@media (max-width: 470px) {
+  .homeTitle h1 {
+    font-size: 3.5rem;
   }
-  50% {
-    opacity: 0;
-  }
-}
 
-@media (max-width: 690px) {
-  .professionalTitle {
-    float: initial;
-    padding: initial;
-    display: flex;
+  .homeTitle h2 {
+    font-size: 1.5rem;
+  }
+
+  .homeDescription {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .professionalTitle h1 {
-    padding-top: 5rem;
-  }
-
-  #home {
-    height: 35rem;
-  }
-}
-
-@media (max-width: 430px) {
-  .professionalTitle h1 {
-    font-size: 2.5rem;
-    padding-top: 3rem;
-  }
-
-  .professionalTitle h2 {
-    font-size: 1.3rem;
-  }
-
-  #home {
-    height: 29rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .professionalTitle h1 {
-    font-size: 2rem;
-  }
-
-  .professionalTitle h2 {
-    font-size: 1rem;
-    padding-top: 2rem;
-  }
-
-  #home {
-    height: 24rem;
+    gap: 0;
   }
 }

@@ -1,73 +1,107 @@
-.footer {
-  background-color: rgb(0, 0, 0);
+#footer {
+  background-color: var(--black-initial);
+  padding: 16px;
 }
 
-.top {
-  display: grid;
-  grid-template-columns: 14rem 0.7rem 14rem;
-  padding-top: 0.7rem;
-  text-align: center;
+.topFooter {
+  display: flex;
   justify-content: center;
+  gap: 32px;
+  margin-left: 100px;
 }
 
-.top h2 {
-  padding-top: 1rem;
-  font-size: 1.1rem;
-  color: rgb(0, 255, 255);
-}
-
-.image {
-  padding-top: 0.5rem;
-  margin-left: 7rem;
-}
-
-.image img {
+.imageLogoFooter img {
+  padding-top: 8px;
+  width: 96px;
   height: 4.5rem;
-  width: 6rem;
 }
 
-#verticalLine {
-  height: 5rem;
-  border-right: 1px solid rgb(145, 145, 145);
+.topFooter h2 {
+  padding-top: 8px;
+  font-size: 1.1rem;
+  color: var(--blue);
 }
 
-.footerIcon {
-  padding-top: 0.2rem;
-  display: inline-grid;
-  grid-template-columns: 2rem 2rem 2rem 2rem;
-
+.verticalLine {
+  border-right: 1px solid var(--gray-line);
 }
 
-.footerIcon img {
-  width: 1.25rem;
-  height: 1.25rem;
+.iconFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  gap: 8px;
+  background-size: cover;
+  cursor: pointer;
 }
 
-.bottom {
-  padding-top: 0.5rem;
-  text-align: center;
-  padding-bottom: 0.5rem;
+.iconFooter > div {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.bottom p {
-  font-size: 0.75rem;
-  color: rgb(255, 255, 255);
+.githubIcon {
+  background-image: url(../img/svg/githubFooterIcon.svg);
 }
 
-@media (max-width: 650px) {
-  .top {
-    grid-template-columns: 15rem;
+.linkedinIcon {
+  background-image: url(../img/svg/linkedinFooterIcon.svg);
+}
+
+.skypeIcon {
+  background-image: url(../img/svg/skypeFooterIcon.svg);
+}
+
+.behanceIcon {
+  background-image: url(../img/svg/behanceFooterIcon.svg);
+}
+
+.githubIcon:hover {
+  background-image: url(../img/svg/githubFooterIconBlue.svg);
+}
+
+.linkedinIcon:hover {
+  background-image: url(../img/svg/linkedinFooterIconBlue.svg);
+}
+
+.skypeIcon:hover {
+  background-image: url(../img/svg/skypeFooterIconBlue.svg);
+}
+
+.behanceIcon:hover {
+  background-image: url(../img/svg/behanceFooterIconBlue.svg);
+}
+
+.bottomFooter {
+  display: flex;
+  justify-content: center;
+  margin-left: 95px;
+  padding-top: 8px;
+}
+
+.bottomFooter p {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+@media (max-width: 700px) {
+  .topFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    gap: 16px;
   }
 
-  .top h2 {
-    padding-top: 0.4rem;
-  }
-
-  .image {
-    margin: auto;
-  }
-
-  #verticalLine {
+  .verticalLine {
     display: none;
+  }
+
+  .bottomFooter p {
+    font-size: 0.7rem;
+  }
+
+  .bottomFooter {
+    margin: 0;
   }
 }

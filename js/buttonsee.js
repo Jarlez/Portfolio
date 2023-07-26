@@ -1,5 +1,5 @@
-var imgAtual = "img/vermais.webp";
-var imgAnterior = "img/vermenos.webp";
+var imgAtual = "img/showmore.png";
+var imgAnterior = "img/showless.png";
 
 function replace() {
     document.getElementById("replaceButton").src = imgAnterior;
@@ -12,7 +12,17 @@ const btnShow = document.getElementById('replaceButton')
 
 function toggleMenu() {
     const show = document.querySelector('#projects')
-    show.classList.toggle('ativo')
+    show.classList.toggle('active')
 }
 
 btnShow.addEventListener('click', toggleMenu);
+
+
+
+
+
+
+
+
+
+

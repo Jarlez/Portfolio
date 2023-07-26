@@ -1,101 +1,113 @@
-.allignAboutMe {
-  width: 90%;
+#aboutMe {
+  background-color: var(--black-initial);
+}
+
+.title a {
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.aboutMeAlignContainer {
+  padding-top: 48px;
   display: flex;
-  margin: auto;
-  gap: 70px;
-  max-width: 80rem;
+  justify-content: center;
+}
+
+.containerAboutMe {
   display: flex;
-  margin: auto;
+  align-items: center;
+  padding: 48px 48px;
+  width: 960px;
+  border: 1px solid var(--black-end);
+  gap: 32px;
+  background-color: var(--black-mid);
 }
 
 .aboutMeImage img {
-  width: 450px;
-  height: 310px;
+  border-radius: 10px;
+  width: 400px;
+  height: 380px;
+}
+
+.aboutMeAlignText {
   display: flex;
-  justify-content: center;
-  box-shadow: -12px 12px rgb(16, 16, 16), 12px -12px rgb(145, 145, 145);
+  flex-direction: column;
+  gap: 16px;
 }
 
-blockquote {
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
-  padding-top: 1.4rem;
-  font-size: 1.3rem;
+.titleAboutMe h1 {
+  font-size: 1.1rem;
+  color: var(--blue);
 }
 
-.aboutMeImage {
-  padding-top: 64px;
+.titleAboutMe h2 {
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
-.aboutMeText {
-  padding-top: 55px;
+.descriptionAboutMe h3 {
+  font-size: 1.1rem;
+  color: var(--white-low);
 }
 
 .aboutMeText p {
-  font-size: 1.3rem;
-  text-indent: 2em;
+  font-size: 1rem;
+  color: #a0a0a0;
 }
 
-.titleAboutMe {
-  text-align: center;
-  padding-top: 64px;
-}
-.titleAboutMe h1 {
-  font-size: 3rem;
-}
-
-.curriculum button {
-  color: rgb(255, 255, 255);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.2rem;
-  width: 8.5rem;
-  height: 2.5rem;
-  transition: 2s;
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  border: none;
-  font-weight: bold;
+.aboutMeText strong {
+  color: var(--white-low);
 }
 
 .curriculum {
-  padding-top: 4rem;
-  padding-bottom: 3.5rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 48px 48px;
+}
+
+.curriculum button {
+  width: 145px;
+  height: 50px;
+  color: var(--white);
+  border-color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 .curriculum button:hover {
-  background: rgb(145, 145, 145);
-  border: 0.1rem solid rgb(0, 0, 0);
+  transition-duration: 1s;
+  transition-property: all;
+  background-color: var(--white);
+  color: var(--black);
 }
 
-@media (max-width: 1120px) {
-  .allignAboutMe {
-    display: grid;
-    justify-content: space-between;
-    margin: auto;
-  }
-
-  .aboutMeImage img {
-    width: 80%;
-    height: initial;
-    margin: auto;
-  }
-  .aboutMeText {
-    text-align: center;
-    margin: auto;
-    padding-top: 1rem;
+@media (max-width: 1170px) {
+  .aboutMeImage {
+    display: none;
   }
 
   .aboutMeText p {
-    font-size: 1.7rem;
-    text-indent: 0;
+    font-size: 1.5rem;
+  }
+  .titleAboutMe h1 {
+    font-size: 1.5rem;
+  }
+
+  .titleAboutMe h2 {
+    font-size: 1.8rem;
+  }
+
+  .descriptionAboutMe h3 {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 500px) {
   .aboutMeText p {
-    width: 90%;
-    display: flex;
-    margin: auto;
+    font-size: 1rem;
   }
 }

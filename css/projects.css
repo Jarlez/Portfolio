@@ -1,5 +1,197 @@
 #projects {
-  background-color: rgb(6, 6, 6);
+  background-color: var(--black-mid);
+}
+
+.alignCardProject {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.projectCard {
+  height: 470px;
+  width: 380px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+}
+
+.projectImage {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.projectImage::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselImage {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.zoomIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#zoomIconImage {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.carouselNavigation {
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.carouselNavigation .arrow {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--light-black);
+}
+
+.arrow.prev {
+  visibility: hidden;
+}
+
+.arrow img {
+  width: 15px;
+}
+
+.projectSubtitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectSubtitle {
+  padding-top: 16px;
+  width: 90%;
+}
+
+.projectSubtitle h2 {
+  color: var(--blue);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.projectDescription {
+  color: var(--white-low);
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectDescription p {
+  font-size: 1rem;
+}
+
+.projectButton button {
+  width: 125px;
+  height: 35px;
+  color: var(--black);
+  background-color: var(--blue);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+
+.projectButton {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectButton button:hover {
+  background-color: var(--white);
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+/* CSS para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--light-black);
+}
+
+.modalDescription p {
+  color: var(--white);
+  padding-top: 16px;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.close {
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.modalCarouselArrow img {
+  width: 30px;
+}
+
+.modalCarouselImage {
+  display: none;
+  max-width: 100%;
+}
+
+.modalCarouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.modalCarouselArrow.prev {
+  left: 10px;
+}
+
+.modalCarouselArrow.next {
+  right: 10px;
 }
 
 #projectHidden {
@@ -8,159 +200,96 @@
   transition: 1s;
 }
 
-#projects.ativo #projectHidden {
-  height: 22rem;
+#projects.active #projectHidden {
+  height: 52vh;
   visibility: visible;
   transition: 1s;
 }
 
-.allignCardProject {
-  justify-content: center;
-  display: flex;
-  padding-top: 3rem;
-  gap: 3rem;
-}
-
-.projectCard {
-  background-color: rgb(255, 255, 255);
-  height: 20rem;
-  width: 17rem;
-  box-shadow: 0.5rem 0.5rem rgb(145, 145, 145);
-}
-
-.projectCard img {
-  width: 90%;
-  height: 10rem;
-  display: flex;
-  margin: auto;
-  padding-top: 1rem;
-}
-
-.production {
-  background-color: rgb(0, 0, 0);
-  width: 90%;
-  height: 10rem;
-  display: flex;
-  margin: auto;
-  margin-top: 1rem;
-}
-
-.range {
-  margin: auto;
-}
-
-.range h3 {
-  font-family: "Josefin Sans", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.projectSubtitle {
-  text-align: center;
-  padding-top: 1.5rem;
-}
-
-.projectSubtitle h2 {
-  font-size: 1.5rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-}
-
-.projectButton button {
-  color: rgb(250, 250, 250);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1rem;
-  width: 7rem;
-  height: 2.2rem;
-  background-color: rgb(0, 0, 0);
-  border: none;
-  font-weight: bold;
-}
-
-.projectButton {
-  padding-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.projectButton button:hover {
-  background: rgb(145, 145, 145);
-  border: 1px solid rgb(0, 0, 0);
-  cursor: pointer;
-  transition: 2s;
-}
-
-.projectMoreButton img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.projectMoreButton button {
-  background-color: rgb(6, 06, 06);
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-
+/* Botão ver mais e ver menos*/
 .projectMoreButton {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 32px;
 }
 
+.projectMoreButton img {
+  width: 48px;
+}
+
+.projectMoreButton button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  animation-name: moveUpDown;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: var(--black-mid);
+}
+
+/* GitHub LINK*/
 .githubLink {
-  padding: 2.5rem 2.5rem;
+  padding: 48px 48px;
   text-align: center;
 }
 
 .githubLink a {
-  font-family: "Josefin Sans", sans-serif;
-  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   text-decoration: none;
+  color: var(--white);
 }
 
 .githubLink a:hover {
-  color: rgb(0, 255, 255);
   transition-duration: 1s;
   transition-property: all;
+  color: var(--blue);
 }
 
-@media (max-width: 1000px) {
-  .allignCardProject {
-    gap: 2rem;
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
   }
-
-  .projectSubtitle h2 {
-    font-size: 1.2rem;
+  50% {
+    transform: translateY(-15px);
   }
-
-  #projects.ativo #projectHidden {
-    padding-top: 2rem;
-  }
-  .projectCard {
-    height: 20rem;
-    width: 25%;
+  100% {
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 900px) {
-  #projects.ativo #projectHidden {
-    padding-top: 4rem;
-    height: 1100px;
+@media (max-width: 1260px) {
+  #projects.active #projectHidden {
+    height: 95rem;
   }
 
-  .allignCardProject {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 4rem;
-  }
-
-  .projectCard {
-    height: 20rem;
-    width: 17rem;
+  .alignCardProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
   }
 
   .projectMoreButton {
-    padding-top: 3rem;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectCard {
+    width: 288px;
+    height: 29rem;
+  }
+
+  .carouselNavigation {
+    top: 15%;
+  }
+
+  .modalCarouselArrow img {
+    width: 15px;
+  }
+
+  .close {
+    font-size: 1.5rem;
   }
 }

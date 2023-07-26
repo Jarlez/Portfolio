@@ -1,52 +1,78 @@
 #contact {
-  background-color: rgb(6, 6, 6);
+  background-color: var(--black-mid);
 }
 
 .contactAlign {
-  width: 80%;
   display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  text-align: center;
-  padding: 4rem;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 80px;
 }
 
-.info {
-  width: 9.5rem;
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 192px;
 }
 
-.contactImage img {
-  height: 2.5rem;
-  width: 3rem;
+.contactImage {
   cursor: pointer;
+  background-size: cover;
+}
+
+.emailIcon,
+.mapIcon,
+.whatsappIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.whatsappIcon {
+  background-image: url(../img/svg/wpp.svg);
+}
+
+.emailIcon {
+  background-image: url(../img/svg/email.svg);
+}
+
+.mapIcon {
+  background-image: url(../img/svg/zoom1.svg);
+}
+
+.whatsappIcon:hover {
+  background-image: url(../img/svg/wppazul.svg);
+}
+
+.emailIcon:hover {
+  background-image: url(../img/svg/email1.svg);
+}
+
+.mapIcon:hover {
+  background-image: url(../img/svg/zoomBlue1.svg);
 }
 
 .contactInfo h2 {
-  padding-top: 1.5rem;
+  padding-top: 24px;
   font-size: 1rem;
-  color: rgb(0, 255, 255);
+  color: var(--blue);
 }
 
 .contactInfo p {
-  padding-top: 0.5rem;
+  padding-top: 8px;
   font-size: 1rem;
-  color: rgb(255, 255, 255);
+  color: var(--white);
 }
 
-.info img:hover {
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-  transition-property: all;
-}
-
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .contactAlign {
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 24px;
+    align-items: center;
   }
 
   .info {
     width: initial;
-    padding: 1.5rem;
+    padding: 24px;
   }
 }

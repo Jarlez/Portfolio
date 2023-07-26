@@ -1,85 +1,91 @@
 #ability {
-  background-color: rgb(6, 6, 6);
+  background-color: var(--black-mid);
 }
 
 .abilityContainer {
-  padding-top: 4rem;
   display: grid;
-  grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
+  grid-template-columns: 128px 128px 128px 128px 128px;
   justify-content: center;
-  gap: 3.5rem;
-  padding-bottom: 4rem;
+  padding: 80px 80px;
+  gap: 48px;
 }
 
-.abilityBox img {
+.abilityCard img {
   width: 6.5rem;
   height: 6.5rem;
 }
 
-.abilityBox {
+.abilityCard {
   width: 8.5rem;
   height: 8.5rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1.5rem;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: ease 0.3s;
   transform-style: preserve-3d;
+  background-color: var(--white);
 }
 
 .flip {
   transform: rotateY(180deg);
 }
 
-.face {
-  width: 6.5rem;
-  height: 6.5rem;
-  display: flex;
-  color: rgb(255, 255, 255);
-  position: absolute;
-}
-
-.front {
+.frontCard {
   transform: rotateY(180deg);
 }
 
-.back {
-  background-color: rgb(255, 255, 255);
-  backface-visibility: hidden;
+.faceContent {
+  width: 6.5rem;
+  height: 6.5rem;
+  position: absolute;
+  color: var(--white);
 }
 
-.list {
-  margin: auto;
+.backCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: var(--white);
 }
 
 .list li {
   font-size: 0.8rem;
-  color: rgb(0, 0, 0);
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  padding-top: 0.35rem;
-  list-style-type: none;
   font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+  color: var(--black);
 }
 
-@media (max-width: 950px) {
+.list h3 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--black);
+}
+
+@media (max-width: 935px) {
   .abilityContainer {
-    gap: 1.5rem;
+    gap: 24px;
   }
 }
 
 @media (max-width: 800px) {
   .abilityContainer {
-    gap: 2rem;
+    gap: 32px;
     display: grid;
-    grid-template-columns: 8rem 8rem;
+    grid-template-columns: 128px 128px;
   }
 }
 
 @media (max-width: 400px) {
   .abilityContainer {
-    grid-template-columns: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

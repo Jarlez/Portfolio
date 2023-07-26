@@ -1,11 +1,15 @@
 #skills {
-  background-color: rgb(3, 3, 3);
-  display: grid;
-  grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem;
+  display: flex;
   text-align: center;
   justify-content: center;
-  gap: 1.25rem;
-  padding: 1.5rem 1.5rem;
+  gap: 16px;
+  padding: 48px 48px;
+  background-color: var(--black-initial);
+}
+
+.skillContainer {
+  width: 110px;
+  gap: 32px;
 }
 
 .skillCardImage img {
@@ -13,52 +17,50 @@
   height: 2.5rem;
 }
 
-.skillValue p {
-  letter-spacing: 1px;
-  padding-top: 0.5rem;
-  font-size: 0.8rem;
-  color: rgb(0, 255, 255);
-}
-
 .skillValue h2 {
   font-size: 1.5rem;
-  padding-top: 0.5rem;
-  color: rgb(255, 255, 255);
+  padding-top: 8px;
+  color: var(--white);
+}
+
+.skillValue p {
+  letter-spacing: 1px;
+  padding-top: 8px;
+  font-size: 0.8rem;
+  color: var(--blue);
 }
 
 .line {
   width: 1px;
   height: 7.5rem;
-  border-right: 1px solid rgb(145, 145, 145);
+  border-right: 1px solid var(--gray-line);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 850px) {
   #skills {
-    grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem;
-
+    display: grid;
+    grid-template-columns: 128px 8px 128px 8px 128px;
   }
 
   .line:nth-child(6) {
-    border-right: 1px solid rgb(0, 0, 0);
-  
+    display: none;
   }
 }
 
 @media (max-width: 600px) {
   #skills {
-    grid-template-columns: 6.5rem 0.5rem 6.5rem 0.5rem;
-    
+    grid-template-columns: 128px 8px 128px;
   }
   .line:nth-child(6) {
-    border-right: 1px solid rgb(145, 145, 145);
+    display: block;
   }
 
   .line:nth-child(4) {
-    border-right: 1px solid rgb(0, 0, 0);
+    display: none;
   }
 
   .line:nth-child(8) {
-    border-right: 1px solid rgb(0, 0, 0);
+    display: none;
   }
 }
 
@@ -66,11 +68,14 @@
   #skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: initial;
+    align-items: center;
+    gap: 32px;
   }
 
-  .line {
+  .line,
+  .line:nth-child(6),
+  .line:nth-child(4),
+  .line:nth-child(8) {
     display: none;
   }
 }

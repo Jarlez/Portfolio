@@ -6,12 +6,19 @@
 @import url("./projects.css");
 @import url("./skills.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 :root {
-  --azul: rgb(0, 255, 255);
-  --branco: rgb(255, 255, 255);
-  --amarelo: rgb(255, 174, 29);
-  --cinza: rgb(60, 60, 60);
-  --preto: rgb(0, 0, 0);
+  --blue: rgb(0, 255, 255);
+  --white: rgb(255, 255, 255);
+  --white-low: rgb(220, 220, 220);
+  --gray: rgb(60, 60, 60);
+  --gray-line: rgb(145, 145, 145);
+  --black: rgb(0, 0, 0);
+  --black-mid: rgb(17, 17, 17);
+  --black-initial: rgb(15, 15, 15);
+  --black-end: rgb(30, 30, 30);
+  --light-black: rgb(0, 0, 0, 0.7);
 }
 
 * {
@@ -19,9 +26,23 @@
   padding: 0;
 }
 
+/* Scrollbar*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black-initial);
+}
+
 .backgroundImage {
-  background-image: url(../img/workspace.webp);
-  height: 40rem;
+  background-image: url(../img/planodefundo.png);
+  height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,14 +55,18 @@ html {
 
 h1,
 p,
-h2 {
-  font-family: "Josefin Sans", sans-serif;
+h2,
+h3,
+a,
+button,
+li {
+  font-family: "Montserrat", sans-serif;
 }
 
 .title h1 {
   font-size: 3rem;
   text-align: center;
-  color: var(--azul);
+  color: var(--blue);
   padding-top: 64px;
 }
 
@@ -49,11 +74,11 @@ h2 {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 32px;
-  color: var(--branco);
+  color: var(--white);
 }
 
 .buttonTop {
-  background-color: var(--azul);
+  background-color: var(--blue);
   position: fixed;
   right: 2px;
   bottom: 2px;
@@ -61,15 +86,16 @@ h2 {
   height: 20px;
   display: flex;
   text-decoration: none;
-  color: var(--branco);
+  color: var(--white);
   padding: 13px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s;
-  box-shadow: 4px 4px 12px var(--cinza);
+  box-shadow: 4px 4px 12px var(--gray);
+  z-index: 9999;
 }
 
-.buttonTop.ativado {
+.buttonTop.activated {
   bottom: 2px;
   pointer-events: auto;
   opacity: 1;
