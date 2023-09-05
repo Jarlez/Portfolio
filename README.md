@@ -16,8 +16,14 @@ Portfólio de Jarles Sayhare <br/>
 
 <br>
 
-<img alt="License" src="![image](https://github.com/Jarlez/Portfolio/assets/62815538/559dbe09-4a06-4d88-ba7b-8d164546c5ad)
-">
+<div align="center">
+ <img src="https://github.com/Jarlez/Portfolio/assets/62815538/ce355432-bff2-483f-b73e-8b9d7571d44e" width="900px"/>
+  <img src="https://github.com/Jarlez/Portfolio/assets/62815538/3040137f-fe9a-4dfe-9514-1825a80b60b7" width="900px"/>
+  <img src="https://github.com/Jarlez/Portfolio/assets/62815538/d5316dab-da11-4b52-9dbf-a6d0ffa4dd4c" width="900px"/>
+  <img src="https://github.com/Jarlez/Portfolio/assets/62815538/89146ffc-44cd-4746-afa5-0220b67a9430" width="900px"/>
+  <img src="https://github.com/Jarlez/Portfolio/assets/62815538/e99d6e0a-186e-4fbf-aa8c-944b7e6ee961" width="900px"/>
+  <img src="https://github.com/Jarlez/Portfolio/assets/62815538/a624d379-120a-46aa-823e-4212fd5e03e7" width="900px"/>
+</div>
 
 ## 🚀 Tecnologias
 
