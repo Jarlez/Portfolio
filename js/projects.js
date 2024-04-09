@@ -127,9 +127,6 @@ function closeModal(modal) {
 }
 
 
-
-
-
 function closeModalOnClickOutside(modal) {
   window.addEventListener('click', function (event) {
     if (modal.style.display === 'block' && !modal.contains(event.target)) {

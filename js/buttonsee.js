@@ -16,13 +16,3 @@ function toggleMenu() {
 }
 
 btnShow.addEventListener('click', toggleMenu);
-
-
-
-
-
-
-
-
-
-
